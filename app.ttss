@@ -1,0 +1,31 @@
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+button::after {
+    display: none;
+}
+
+.sustain_mdy_my {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 0px;
+    color: rgba(166, 166, 166, 1);
+    text-align: center;
+    margin-top: 30rpx;
+    padding-bottom: 150rpx;
+}

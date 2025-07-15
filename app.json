@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/web/web",
+        "pages/prod/prod",
+        "pages/moments/moments",
+        "pages/solution/solution"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Mini Program",
+        "navigationBarTextStyle": "black"
+    }
+}

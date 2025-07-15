@@ -1,0 +1,165 @@
+<view style="height: 132px;"></view>
+<view class="user">
+    <view class="user-top-section">
+        <image class="user-top-bg" src="https://cdn.juesedao.cn/mdy/056582d689924018969e8039602b3282"
+            mode="scaleToFill"></image>
+        <view class="user-top-content">
+            <view class="avatar-box">
+                <image class="avatar" mode="aspectFill" src="{{user.photo}}"></image>
+            </view>
+            <view class="info-box">
+                <view class="name-job">
+                    <view class="xm">{{user.name}}</view>
+                    <view class="zw">{{user.job}}</view>
+                </view>
+                <view class="gs">{{user.zw}}</view>
+            </view>
+        </view>
+    </view>
+
+
+    <view class="user-bottom-section">
+        <view class="contact-info">
+            <view class="dh">TEL.{{user.phone}}</view>
+            <view class="dz">ADD.{{user.address}}</view>
+        </view>
+        <view class="user_bottom">
+            <view class="item1" bindtap="copyWechatAccount" data-name="加微">
+                <image mode="widthFix" src="https://cdn.juesedao.cn/mdy/7a6bc5d0cf9b46769bd42cbf333af532"></image>
+                <view class="btn-label">加微</view>
+            </view>
+            <view class="item2" bindtap="openPhoneCall" data-name="电话">
+                <image mode="widthFix" src="https://cdn.juesedao.cn/mdy/5ec252c8626e400caaa7f0a71a1027bc"></image>
+                <view class="btn-label">电话</view>
+            </view>
+            <view class="item3" bindtap="openUserAddress" data-name="导航">
+                <image mode="widthFix" src="https://cdn.juesedao.cn/mdy/726a87db03ec4aef8d638f465c0fbcfd"></image>
+                <view class="btn-label">导航</view>
+            </view>
+            <view class="item4">
+                <button class="share-btn" open-type='share'
+                    style="padding: 0; margin: 0; border-radius: 0; background: none;">
+                    <image mode="widthFix" src="https://cdn.juesedao.cn/mdy/449027d65d9f4cd68ff78f3edb244755"></image>
+                </button>
+                <view class="btn-label">分享</view>
+            </view>
+        </view>
+    </view>
+
+</view>
+<button class="consult-card-btn" open-type="im">
+    <view class="consult-card">
+        <image class="consult-bg" src="https://cdn.juesedao.cn/mdy/12dfe17de3674f79bee304335535000d" mode="widthFix">
+        </image>
+        <view class="consult-btn">立即咨询</view>
+    </view>
+</button>
+<view class="history-section">
+    <view class="history-header">
+        <view class="history-title">蜜多云发展历程</view>
+    </view>
+    <scroll-view class="history-scroll" scroll-x="true" show-scrollbar="false" enable-flex="true"
+        bindtouchstart="onHistoryTouchStart" bindtouchend="onHistoryTouchEnd">
+        <view class="marquee-track {{historyMarqueePaused ? 'paused' : ''}}">
+            <block wx:for="{{historyList}}" wx:key="index">
+                <view class="history-card">
+                    <view class="history-year">{{item.year}}</view>
+                    <view class="history-desc">{{item.desc}}</view>
+                </view>
+            </block>
+            <block wx:for="{{historyList}}" wx:key="index2">
+                <view class="history-card">
+                    <view class="history-year">{{item.year}}</view>
+                    <view class="history-desc">{{item.desc}}</view>
+                </view>
+            </block>
+        </view>
+    </scroll-view>
+</view>
+<view class="core-advantage-section">
+    <view class="history-header">
+        <view class="history-title">4大核心优势</view>
+    </view>
+    <view class="core-advantage-row">
+        <view class="core-advantage-item">
+            <view style="display: flex; width: 100%; align-items: center;">
+                <image class="core-advantage-icon" src="https://cdn.juesedao.cn/mdy/9c478568d3e14113914aea38c2817b1f">
+                </image>
+                <view class="core-advantage-label">更专注</view>
+            </view>
+
+            <view class="core-advantage-desc">专注大家居行业营销数字化转型过程中的工具与运营系统性解决方案</view>
+        </view>
+        <view class="core-advantage-item">
+            <view style="display: flex; width: 100%; justify-content: flex-end; align-items: center;">
+                <image class="core-advantage-icon" src="https://cdn.juesedao.cn/mdy/9c478568d3e14113914aea38c2817b1f">
+                </image>
+                <view class="core-advantage-label">更智能</view>
+            </view>
+            <view class="core-advantage-desc-1">结合更前沿的AI技术提升产品的算法精度，从而提高项目的整体质量</view>
+        </view>
+    </view>
+    <image class="core-advantage-center-img" src="https://cdn.juesedao.cn/mdy/c782a3e41c6042d7b57236c86392dafa"></image>
+    <view class="core-advantage-row">
+        <view class="core-advantage-item">
+            <view style="display: flex; width: 100%; align-items: center;">
+                <image class="core-advantage-icon" src="https://cdn.juesedao.cn/mdy/9c478568d3e14113914aea38c2817b1f">
+                </image>
+                <view class="core-advantage-label">更敏捷</view>
+            </view>
+            <view class="core-advantage-desc">灵敏型组织更短周期、更高频次的迭代，迅速响应市场需求的变化</view>
+        </view>
+        <view class="core-advantage-item">
+            <view style="display: flex; width: 100%; justify-content: flex-end; align-items: center;">
+                <image class="core-advantage-icon" src="https://cdn.juesedao.cn/mdy/9c478568d3e14113914aea38c2817b1f">
+                </image>
+                <view class="core-advantage-label">更落 地</view>
+            </view>
+            <view class="core-advantage-desc-1">具备深刻的市场营销经验，有效执行工具与业务场景的匹配</view>
+        </view>
+    </view>
+</view>
+<view class="news">
+    <view class="history-section">
+        <view class="history-header">
+            <view class="history-title-1">共识聚合,让品牌溢价</view>
+        </view>
+    </view>
+
+    <view bindtap="navigateToWeb" data-url="{{item.linkUrl}}" class="item" tt:for="{{articleList}}" tt:key="index"
+        data-id="{{item.id}}">
+        <image style="width: 100%; border-radius: 30rpx;" mode="widthFix" tt:if="{{item.photo}}" src="{{item.photo}}"
+            data-item="{{item}}" />
+        <view class="name">{{item.title}}</view>
+
+
+    </view>
+</view>
+<view class="sustain_mdy_my">
+    蜜多云科技提供技术支持
+</view>
+
+<view class="share">
+    <button class="fx_banner" open-type='share'>
+        <image style="width: 16px; height: 16px; " src="https://cdn.juesedao.cn/huiya/5696c1a6cb9a4316a1ca46593c77a45b">
+        </image>
+        <view style="margin-top: 8rpx;text-align: center;">分享名片</view>
+    </button>
+    <view
+        style="width: 90%; height: 2px; background-color: aliceblue;margin-top: 15rpx;margin-bottom: 15rpx;margin-left: 3px;">
+    </view>
+    <block wx:if="{{StorageSync}}">
+        <button class="fx_banner1" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+            <view bindtap="businessCard" style="margin-top: 10rpx;">我的名片</view>
+            <image style=" margin-left: 16rpx ;width: 40rpx; height: 30rpx; margin-top: 7px;"
+                src="https://cdn.juesedao.cn/huiya/7bb66480cf4d4714b1b17e99ca19e955"></image>
+        </button>
+    </block>
+    <block wx:else>
+        <view bindtap="businessCard">
+            <view style="margin-top: 20rpx;">我的名片</view>
+            <image style="width: 40rpx; height: 30rpx; margin-top: 7px;"
+                src="https://cdn.juesedao.cn/huiya/7bb66480cf4d4714b1b17e99ca19e955"></image>
+        </view>
+    </block>
+</view>
