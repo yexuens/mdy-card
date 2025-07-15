@@ -1,4 +1,6 @@
 {
-  "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+      "custom-tab-bar": "/components/custom-tab-bar/custom-tab-bar"
+  },
+  "navigationStyle": "custom"
 }

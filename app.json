@@ -4,12 +4,52 @@
         "pages/web/web",
         "pages/prod/prod",
         "pages/moments/moments",
-        "pages/solution/solution"
+        "pages/solution/solution",
+        "pages/course/course"
     ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "Mini Program",
         "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#999999",
+        "selectedColor": "#ffffff",
+        "backgroundColor": "#000000",
+        "borderStyle": "white",
+        "height": "200px",
+        "custom": true,
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "互相认识",
+                "iconPath": "static/tabbar/1.png",
+                "selectedIconPath": "static/tabbar/1-1.png"
+            },
+            {
+                "pagePath": "pages/prod/prod",
+                "text": "做什么的",
+                "iconPath": "static/tabbar/2.png",
+                "selectedIconPath": "static/tabbar/2-1.png"
+            },
+            {
+                "pagePath": "pages/course/course",
+                "text": "新派流量",
+                "iconPath": "static/tabbar/3.png",
+                "selectedIconPath": "static/tabbar/3-1.png"
+            },
+            {
+                "pagePath": "pages/solution/solution",
+                "text": "最近忙啥",
+                "iconPath": "static/tabbar/4.png",
+                "selectedIconPath": "static/tabbar/4-1.png"
+            },
+            {
+                "pagePath": "pages/moments/moments",
+                "text": "朋友圈look",
+                "iconPath": "static/tabbar/5.png",
+                "selectedIconPath": "static/tabbar/5-1.png"
+            }
+        ]
     }
 }

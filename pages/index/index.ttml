@@ -1,4 +1,6 @@
-<view style="height: 132px;"></view>
+<custom-tab-bar />
+<view style="height: 132px;">
+</view>
 <view class="user">
     <view class="user-top-section">
         <image class="user-top-bg" src="https://cdn.juesedao.cn/mdy/056582d689924018969e8039602b3282"
@@ -39,7 +41,8 @@
             <view class="item4">
                 <button class="share-btn" open-type='share'
                     style="padding: 0; margin: 0; border-radius: 0; background: none;">
-                    <image mode="widthFix" src="https://cdn.juesedao.cn/mdy/449027d65d9f4cd68ff78f3edb244755"></image>
+                    <image mode="widthFix" src="https://cdn.juesedao.cn/mdy/449027d65d9f4cd68ff78f3edb244755">
+                    </image>
                 </button>
                 <view class="btn-label">分享</view>
             </view>
@@ -99,7 +102,8 @@
             <view class="core-advantage-desc-1">结合更前沿的AI技术提升产品的算法精度，从而提高项目的整体质量</view>
         </view>
     </view>
-    <image class="core-advantage-center-img" src="https://cdn.juesedao.cn/mdy/c782a3e41c6042d7b57236c86392dafa"></image>
+    <image class="core-advantage-center-img" src="https://cdn.juesedao.cn/mdy/c782a3e41c6042d7b57236c86392dafa">
+    </image>
     <view class="core-advantage-row">
         <view class="core-advantage-item">
             <view style="display: flex; width: 100%; align-items: center;">
