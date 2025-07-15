@@ -1,4 +1,49 @@
 <custom-tab-bar />
 
-<!-- d:\Dy\mdy-card\mdy-card\pages\moments\moments.ttml -->
-<text>d:\Dy\mdy-card\mdy-card\pages\moments\moments.ttml</text>
+
+
+<view class="top-background">
+  <!-- <image style="max-height:275px; width: 100%;" src="https://cdn.juesedao.cn/mdy/70a2c0fee89a41c181f8be9a36faffdc" mode="widthFix" /> -->
+  <view
+    style="display: flex; align-items: center; justify-content: space-between;margin-left: 32rpx;margin-right: 32rpx; padding-top:{{navBarHeight + 16}}px ">
+  </view>
+</view>
+
+
+
+<view class="padding">
+  <swiper style="width: 100%; margin-top: 8rpx;" snap-to-edge="{{true}}" circular="{{false}}" autoplay="true"
+    interval="3000" duration="500">
+    <block wx:for="{{Recommend}}" wx:key="index">
+      <swiper-item class="case_swiper">
+        <view class="swiper_items_case" catchtap="getdetailed" data-id="{{item.id}}" data-item="{{item}}">
+          <view class="ProductLayout">
+            <view class="videoimage">
+              <image mode='widthFix' style="width: 100%; height: 230rpx;" src="{{item.photo}}"></image>
+            </view>
+          </view>
+          <view class="title_box2">
+            <text style="font-size: 20rpx;">{{item.title}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <block wx:for="{{list1}}" wx:key="index">
+    <view class="title" style="margin-top: 40rpx;">
+      <view class="top"></view>
+      <view class="nr">{{item.typeName}}</view>
+      <view class="bottom"></view>
+    </view>
+    <view class="mdlist">
+      <view class="item" wx:for="{{item.images}}" wx:key="index" wx:for-index="idx" wx:for-item="itemName">
+        <image bindtap='previewImage3' data-url="{{itemName.pic}}" mode='widthFix' style="width: 100%; height: 230rpx;"
+          src="{{itemName.pic}}"></image>
+        <view style="text-align: center;margin-top: 10rpx;font-size: 24rpx;">
+          {{itemName.name}}
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class="{{banner ? 'sustain_mdy_my':'sustain_mdy'}}">蜜多云科技提供技术支持</view>
+</view>

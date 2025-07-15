@@ -1,3 +1,67 @@
 <custom-tab-bar />
 
-<text>d:\Dy\mdy-card\mdy-card\pages\solution\solution.ttml</text>
+<view style="height: 88px;"></view>
+<view class="top-background">
+    <!-- <image style="max-height:275px; width: 100%;" src="https://cdn.juesedao.cn/mdy/70a2c0fee89a41c181f8be9a36faffdc" mode="widthFix" /> -->
+    <view style="display: flex; align-items: center; justify-content: space-between;">
+        <view class="container-left">
+            <view class="title-t">
+                数字营销解决方案
+            </view>
+            <view class="title-c">
+                DIGTAL MARKETING
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<!-- tabs -->
+<view style="border-radius: 30rpx; background-color: #fff; overflow: hidden;">
+    <view style="padding: 0 20px; padding-bottom: 300rpx;">
+        <view class="brand-tab-bar">
+            <view class="brand-tab-item {{currentTab === 0 ? 'active' : ''}}" data-index="0" bindtap="onTabTap">方案分享
+            </view>
+            <view class="brand-tab-item {{currentTab === 1 ? 'active' : ''}}" data-index="1" bindtap="onTabTap">执行落地
+            </view>
+            <view class="brand-tab-item {{currentTab === 2 ? 'active' : ''}}" data-index="2" bindtap="onTabTap">干货分享
+            </view>
+        </view>
+        <view class="tab-content">
+            <view wx:if="{{currentTab === 0}}">
+                <view class="corporation">
+                    <view class="scheme_banner" wx:for="{{Solution}}" wx:key="id" wx:if="{{index < 4}}">
+                        <image style="border-radius: 24rpx;" bindtap="getdetailed" src="{{item.photo}}"
+                            data-item="{{item}}"></image>
+                        <view class="rightitemview">{{item.title}}</view>
+                    </view>
+                    <view wx:if="{{!Solution || Solution.length === 0}}">暂无数据</view>
+                </view>
+            </view>
+            <view wx:if="{{currentTab === 1}}">
+                <view class="corporation">
+                    <view class="scheme_banner" wx:for="{{essayList}}" wx:key="index" data-id="{{item.id}}"
+                        wx:if="{{index < 3}}">
+                        <image style="border-radius: 24rpx;" bindtap="getdetailed" wx:if="{{item.photo}}"
+                            src="{{item.photo}}" data-item="{{item}}"></image>
+                        <view class="rightitemview">{{item.title}}</view>
+                    </view>
+                    <view wx:if="{{!essayList || essayList.length === 0}}">暂无数据</view>
+
+                </view>
+            </view>
+            <view wx:if="{{currentTab === 2}}">
+                <view class="corporation">
+                    <view class="scheme_banner" wx:for="{{Drygoods}}" wx:key="index" data-id="{{item.id}}"
+                        wx:if="{{index < 3}}">
+                        <image style="border-radius: 24rpx;" bindtap="getdetailed" wx:if="{{item.photo}}"
+                            src="{{item.photo}}" data-item="{{item}}"></image>
+                    </view>
+                    <view wx:if="{{!Drygoods || Drygoods.length === 0}}">暂无数据</view>
+
+                </view>
+            </view>
+        </view>
+        <view class="{{Drygoods && Drygoods.length ? 'sustain_mdy_my' :'sustain_mdy'}}">蜜多云科技提供技术支持</view>
+    </view>
+</view>

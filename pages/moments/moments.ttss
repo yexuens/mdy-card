@@ -1,1 +1,218 @@
-/* d:\Dy\mdy-card\mdy-card\pages\moments\moments.ttss */
+page {
+    background-color: #F2F5FB;
+    padding-bottom: 50rpx;
+}
+
+/* 自定义导航栏 */
+.custom-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    /* background: #fff; */
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-family: "Source Han Sans SC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+}
+
+.top-background {
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+        url(https://cdn.juesedao.cn/mdy/1763e8523f0d4455b385d8756c6dc7d2) center/cover no-repeat;
+    background-size: cover;
+}
+
+.padding {
+    padding: 0 32rpx;
+    padding-top: 10rpx;
+    padding-bottom: 200rpx;
+}
+
+.bottom .information {
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 255, 255, 1);
+    height: 568rpx;
+    width: 100%;
+    left: 0;
+}
+
+.information .information_item {
+    height: 420rpx;
+    opacity: 1;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 1);
+
+    border: 2px solid rgba(0, 0, 0, 1);
+    width: 672rpx;
+    margin: 0 auto;
+    margin-top: 54rpx;
+    text-align: center;
+}
+
+.information_item .surname,
+.information_item .phone,
+.information_item .address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border-bottom: 1px solid;
+    text-align: left;
+}
+
+.information_item .title {
+    font-size: 44rpx;
+
+    color: rgba(56, 56, 56, 1);
+}
+
+.information_item .title text {
+    font-size: 56rpx;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 0px;
+    color: rgba(87, 154, 255, 1);
+}
+
+.information_item .mark {
+    width: 248rpx;
+    height: 48rpx;
+    opacity: 1;
+    border-radius: 50px;
+    background: rgba(87, 154, 255, 1);
+    margin: 0 auto;
+    font-size: 24rpx;
+    font-weight: 500;
+    line-height: 48rpx;
+    color: rgba(255, 255, 255, 1);
+}
+
+.sustain_mdy_my {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 0px;
+    color: rgba(166, 166, 166, 1);
+    text-align: center;
+    margin-top: 50rpx;
+}
+
+.sustain_mdy {
+    position: fixed;
+    bottom: 27rpx;
+    left: 244rpx;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 0px;
+    color: rgba(166, 166, 166, 1);
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-weight: 900;
+}
+
+.title .top {
+    /* border-top: 1rpx solid #000000; */
+    width: 100px;
+    margin: 0 auto;
+}
+
+.title .bottom {
+    /* border-top: 1rpx solid #000000; */
+    width: 100px;
+    margin: 0 auto;
+}
+
+.title .nr {
+    padding: 20rpx 0;
+    color: #02092F;
+    text-align: center;
+    font-family: "Douyin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 20px */
+    text-transform: uppercase;
+}
+
+.swiper_items_case {
+    position: relative;
+    margin-right: 20rpx;
+
+}
+
+.ProductLayout .videoimage image {
+    border-radius: 25rpx;
+
+}
+
+.videoimage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title_box2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 24rpx;
+    font-weight: 500;
+    width: 97%;
+    /* height: 68rpx; */
+    opacity: 0.7;
+    color: rgba(255, 255, 255, 1);
+    line-height: 68rpx;
+    padding-left: 20rpx;
+    border-radius: 0 0 30rpx 30rpx;
+    background: #00000090;
+    white-space: nowrap;
+    backdrop-filter: blur(80rpx);
+    /* 禁止换行 */
+    overflow: hidden;
+    /* 隐藏溢出 */
+    text-overflow: ellipsis;
+    /* 显示省略号 */
+}
+
+.case_swiper {
+    width: 600rpx !important;
+}
+
+.mdlist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24rpx 60rpx;
+    background-color: #fff;
+    border-radius: 30rpx;
+    padding: 52rpx 40rpx;
+    margin-top: 40rpx;
+}
+
+.mdlist .item {
+    width: 100%;
+    box-sizing: border-box;
+}
