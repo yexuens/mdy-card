@@ -1,5 +1,22 @@
 {
     "setting": {
         "urlCheck": false
+    },
+    "condition": {
+        "miniprogram": {
+            "current": 1752549100570,
+            "list": [
+                {
+                    "id": 1752549100570,
+                    "name": "pages/prod/prod",
+                    "pathName": "pages/prod/prod",
+                    "query": "",
+                    "scene": "990001",
+                    "launchFrom": "scan",
+                    "location": "qr_code",
+                    "mockUpdateType": "Noupdate"
+                }
+            ]
+        }
     }
 }

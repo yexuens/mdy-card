@@ -1,4 +1,117 @@
 <custom-tab-bar />
 
-<!-- d:\Dy\mdy-card\mdy-card\pages\prod\prod.ttml -->
-<text>d:\Dy\mdy-card\mdy-card\pages\prod\prod.ttml</text>
+<scroll-view scroll-y="true" class="page-scroll" scroll-top="{{scrollTop}}" scroll-with-animation="true" bindscroll="onScroll">
+    <view class="top-image-wrap">
+      <image class="top-image" src="https://cdn.juesedao.cn/mdy/6801ddbed78748b38848a29be5926836" mode="aspectFill"></image>
+    </view>
+    <!-- <view wx:if="{{tabBarSticky}}" style="height:88px;width:100%;background:#fff;"></view> -->
+    <view class="sticky-tab-wrap {{tabBarSticky ? 'sticky' : ''}}" id="tabBar">
+      <scroll-view scroll-x="true" class="sticky-tab" scroll-left="{{tabScrollLeft}}" scroll-with-animation="true">
+        <view class="tab-content">
+          <block wx:for="{{tabList}}" wx:key="index">
+            <view class="tab-item {{currentTab === index ? 'active' : ''}}" bindtap="onTabTap" data-index="{{index}}">
+              {{item}}
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+    <view id="sectionA" class="section" style="height: 600px;">
+      <image class="sectionImage" style="width: 100%; height: 100%;" src="https://cdn.juesedao.cn/mdy/5945998471a9424db3851cd4ad5b8c39" mode="scaleToFill" />
+    </view>
+    <view id="sectionB" class="section">
+      <view class="sectionback sectionB-bg">
+        <view class="sectionB-content">
+          <view class="sectionB-title">行业场景数字化系统</view>
+          <view class="sectionB-subtitle">深耕行业 · 深入市场 · 深度解决方案</view>
+          <scroll-view class="sectionB-scroll" scroll-x="true" show-scrollbar="false">
+            <view class="sectionB-img-list">
+              <scroll-view class="sectionB-scroll-row" scroll-x="true" show-scrollbar="false">
+                <view class="sectionB-row sectionB-row-top">
+                  <block wx:for="{{recommendOdd}}" wx:key="id" wx:for-index="idx">
+                    <view class="sectionB-card" style="left: {{ ((idx * 2) * (260 + 32) / 1.3)}}rpx; position: absolute;" bindtap="Picture" data-item="{{item}}">
+                      <view class="sectionB-card-num sectionB-card-num-top">{{idx * 2 + 1}}</view>
+                      <image class="sectionB-card-img" src="{{item.photo}}" mode="scaleToFill" />
+                      <!-- <view class="sectionB-card-title">{{item.cateName}}</view> -->
+                      <!-- <view class="sectionB-card-desc">{{item.productName}}</view> -->
+                    </view>
+                  </block>
+                </view>
+                <view class="sectionB-line-wrap" style="width: {{sectionBLineWidth / 1.3}}rpx;">
+                  <view class="sectionB-line" style="left: {{sectionBLineLeft}}rpx; width: {{sectionBLineRealWidth / 1.3}}rpx;"></view>
+                  <block wx:for="{{recommendDots}}" wx:key="index" wx:for-index="idx">
+                    <view class="sectionB-dot" style="left: {{item.left / 1.3}}rpx;"></view>
+                  </block>
+                </view>
+                <view class="sectionB-row sectionB-row-bottom">
+                  <block wx:for="{{recommendEven}}" wx:key="id" wx:for-index="idx">
+                    <view class="sectionB-card" style="left: {{ ((idx * 2 + 1) * (260 + 32) / 1.3)}}rpx; position: absolute;" bindtap="Picture" data-item="{{item}}">
+                      <view class="sectionB-card-num sectionB-card-num-bottom">{{idx * 2 + 2}}</view>
+                      <image class="sectionB-card-img" src="{{item.photo}}" mode="scaleToFill" />
+                      <!-- <view class="sectionB-card-title">{{item.cateName}}</view> -->
+                      <!-- <view class="sectionB-card-desc">{{item.productName}}</view> -->
+                    </view>
+                  </block>
+                </view>
+              </scroll-view>
+            </view>
+          </scroll-view>
+        </view>
+      </view>
+      <view style="display: flex; width: 100%; height: 100%;">
+        <image style="height: 300px; width: 100%;object-fit: cover;" src="https://cdn.juesedao.cn/mdy/cb5c14a7122d48388aaa00776c91bf00" mode="widthFix" />
+      </view>
+    </view>
+    <view id="sectionC" class="section sectionC-bg" style="position: relative;">
+      <view style="position: absolute;bottom: 270px;">
+        <view class="marquee-container">
+          <view class="marquee-scroll marquee-scroll-1" scroll-x="true" scroll-left="{{scrollLeft1}}" scroll-with-animation="false" show-scrollbar="false">
+            <view class="marquee-content">
+              <block wx:for="{{line1Items}}" wx:key="index">
+                <view class="sectionC-item">{{item}}</view>
+              </block>
+              <block wx:for="{{line1Items}}" wx:key="index2">
+                <view class="sectionC-item">{{item}}</view>
+              </block>
+            </view>
+          </view>
+        </view>
+        <view class="marquee-container">
+          <view class="marquee-scroll marquee-scroll-2" scroll-x="true" scroll-left="{{scrollLeft2}}" scroll-with-animation="false" show-scrollbar="false">
+            <view class="marquee-content">
+              <block wx:for="{{line2Items}}" wx:key="index">
+                <view class="sectionC-item">{{item}}</view>
+              </block>
+              <block wx:for="{{line2Items}}" wx:key="index2">
+                <view class="sectionC-item">{{item}}</view>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view id="sectionD" class="section">
+      <view class="scimage" style="height: 492px;">
+        <image style="object-fit: cover;width: 100%; height: 100%;" src="https://cdn.juesedao.cn/mdy/d1ea5714113f437291a6b57cdb7a5da3" mode="widthFix" />
+      </view>
+    </view>
+  
+  
+    <view id="sectionE" class="section">
+      <view class="scimage" style="height: 1013px;">
+        <image style="width: 100%;height: 100%; " src="https://cdn.juesedao.cn/mdy/042fca9746224e10a66ce8abafaf92fe" mode="scaleToFill" />
+      </view>
+      <view class="scimage" style="height: 309px;">
+        <image style="object-fit: cover;width: 100%; height: 100%;" src="https://cdn.juesedao.cn/mdy/0510c0190a034afebf93d722d1b4d017" mode="aspectFill" />
+      </view>
+      <view class="scimage">
+        <image style="object-fit: cover;width: 100%;" src="https://cdn.juesedao.cn/mdy/b40029f6e1c54a7caa38f9cbf1999c26" mode="widthFix" />
+      </view>
+      <view class="scimage">
+        <image style=" object-fit: cover;width: 100%;" src="https://cdn.juesedao.cn/mdy/36d670033f3e40f39c638c51a9bc48e9" mode="widthFix" />
+      </view>
+    </view>
+  
+    <view style="height: 88px;"></view>
+  
+  </scroll-view>
