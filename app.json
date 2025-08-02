@@ -5,7 +5,17 @@
         "pages/prod/prod",
         "pages/moments/moments",
         "pages/solution/solution",
-        "pages/course/course"
+        "pages/course/course",
+        "pages/product/picture/picture",
+        "pages/card/radar/radar",
+        "pages/content/history/history",
+        "pages/content/publish/publish",
+        "pages/content/publish_new/publish_new",
+        "pages/content/publish_duplicate/publish_duplicate",
+        "pages/card/customer_list/customer_list",
+        "pages/card/customer_history/customer_history",
+        "pages/content/detail/detail",
+        "pages/lesson/detail/detail"
     ],
     "window": {
         "backgroundTextStyle": "light",

@@ -1,1 +1,955 @@
-/* d:\Dy\mdy-card\mdy-card\pages\course\course.ttss */
+page {
+    background-color: #EFF2F8;
+    /* background-color: #F9F9F9; */
+    background: url(https://cdn.juesedao.cn/mdy/4b4632927fa843f7bef346e7d29c6dc2) no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .kjst {
+    /* background: url('https://cdn.juesedao.cn/mdy/d3064c14b4174fb2b28503734aaef222') no-repeat; */
+  
+    /* heig
+    height: 600rpx;
+  00%;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .srkxs {
+    position: absolute;
+    left: 40rpx;
+    top: 620rpx;
+    border-radius: 10px;
+    background: #EDEDED;
+    width: 500rpx;
+    padding: 30rpx 20rpx;
+  }
+  
+  .srkxs input {
+    width: 500rpx;
+  
+  }
+  
+  .ljkq {
+    position: absolute;
+  
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%, -50%)
+  }
+  
+  .ljkq image {
+    width: 366rpx;
+  
+  }
+  
+  .user .icon image {
+    width: 84rpx;
+    height: 84rpx;
+    border-radius: 100rpx;
+    margin-top: 6rpx;
+  }
+  
+  .zft image {
+    width: 48rpx;
+    height: 48rpx;
+  }
+  
+  .user {
+    position: absolute;
+    right: 10rpx;
+    top: 440rpx;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user .name {
+    width: 180rpx;
+    margin-left: 22rpx;
+  }
+  
+  .user .name .gr {
+    color: #000;
+    font-size: 28rpx;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  .user .name .xs {
+    color: #0A0A0A;
+    font-size: 26rpx;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 181.818% */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  
+  .common-functions {
+    border-radius: 16px;
+    border: 1px solid #FFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 30%);
+    backdrop-filter: blur(4px);
+    padding: 32rpx 0 24rpx 0;
+    margin: 24rpx 24rpx 0 24rpx;
+    box-shadow: 0 4rpx 24rpx rgba(0, 0, 0, 0.04);
+  }
+  
+  .cf-title {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #222;
+    margin-left: 32rpx;
+    margin-bottom: 24rpx;
+  }
+  
+  .cf-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .cf-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .cf-item button {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: transparent;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  
+  .cf-icon {
+    width: 64rpx;
+    height: 64rpx;
+    margin-bottom: 12rpx;
+  }
+  
+  .cf-text {
+    font-size: 26rpx;
+    color: #444;
+    margin-top: 2rpx;
+  }
+  
+  .czmd {}
+  
+  .czmd .ietm {
+    background: url('https://cdn.juesedao.cn/mdy/2b75c7756288402894a69e53ab790ff9') no-repeat;
+  
+  
+    height: 324rpx;
+    width: 50%;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .czmd .ietm1 {
+    background: url('https://cdn.juesedao.cn/mdy/67ea9a3783084e399c597c7f1c74a54e') no-repeat;
+  
+    display: inline-block;
+  
+    height: 344rpx;
+    width: 50%;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .czmd .ietm2 {
+    background: url('https://cdn.juesedao.cn/mdy/ed851ed873ae44988b22077ec36c9551') no-repeat;
+  
+    display: inline-block;
+  
+    height: 344rpx;
+    width: 50%;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+  
+    margin-top: 12rpx;
+  }
+  
+  .czmd .ietm3 {
+    background: url('https://cdn.juesedao.cn/mdy/2a8cb4a3884f41b5b193b1b04b13e316') no-repeat;
+    display: inline-block;
+  
+  
+    height: 344rpx;
+    width: 50%;
+    margin: 0 auto;
+    background-size: cover;
+    margin-top: 12rpx;
+  
+    position: relative;
+  }
+  
+  .czmd .ietm4 {
+    background: url('https://cdn.juesedao.cn/mdy/60fedb872a9d4612a03f1893d9ece1cc') no-repeat;
+    display: inline-block;
+  
+  
+    height: 344rpx;
+    width: 50%;
+    margin: 0 auto;
+    background-size: cover;
+    margin-top: 12rpx;
+  
+    position: relative;
+  }
+  
+  .czmd .ietm5 {
+    background: url('https://cdn.juesedao.cn/mdy/a2167d448bcf4872aee95c364826296a') no-repeat;
+    display: inline-block;
+  
+  
+    height: 344rpx;
+    width: 50%;
+    margin: 0 auto;
+    background-size: cover;
+    margin-top: 12rpx;
+  
+    position: relative;
+  }
+  
+  .czxxk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24rpx 0;
+  }
+  
+  .cz-card {
+    width: 48%;
+    height: 448rpx;
+    background-size: cover;
+    background-position: center;
+    border-radius: 24rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .cz-title {
+    font-size: 36rpx;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8rpx;
+    text-align: center;
+    text-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+  }
+  
+  .cz-subtitle {
+    font-size: 26rpx;
+    color: #666;
+    margin-bottom: 24rpx;
+    text-align: center;
+  }
+  
+  .cz-btn {
+    background: #222e3a;
+    color: #fff;
+    border-radius: 48rpx;
+    font-size: 24rpx;
+    /* line-height: 56rpx; */
+    border: none;
+    margin: 0 0 12px 0;
+    padding: 16rpx 56rpx;
+  }
+  
+  .czxxk .left {
+  
+    background-repeat: no-repeat;
+  
+    height: 340rpx;
+    width: 49%;
+    background-size: cover;
+    position: relative;
+    position: relative;
+    margin-top: 20rpx;
+  
+  }
+  
+  .czxxk .rigth {
+    background-repeat: no-repeat;
+  
+  
+    display: inline-block;
+  
+    height: 340rpx;
+    width: 49%;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    border-radius: 25rpx;
+  }
+  
+  .padding {
+    padding: 0 24rpx;
+  }
+  
+  .cxgd {
+    border-radius: 16px;
+    /* background: rgba(255, 255, 255, 0.91); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22rpx;
+    margin-bottom: 44rpx;
+    height: 88rpx;
+    color: #3D3D3D;
+    text-align: center;
+    font-family: "PingFang SC";
+    font-size: 20rpx;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 133.333% */
+  }
+  
+  .cxgd .icon image {
+    width: 48rpx;
+    height: 48rpx;
+    margin-top: 12rpx;
+  }
+  
+  .kcxs {
+    background-color: #fff;
+    padding: 24rpx;
+    padding-top: 40rpx;
+  }
+  
+  .kcxs .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .kcxs .top .title {
+    color: #000;
+    text-align: center;
+    font-size: 38rpx;
+    font-style: normal;
+    font-weight: 800;
+  }
+  
+  .kcxs .top .ckgd {
+    color: #777;
+    text-align: center;
+    font-size: 22rpx;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.22px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .kcxs .top .ckgd image {
+    width: 26rpx;
+    height: 26rpx;
+    margin-top: 6rpx;
+  }
+  
+  .kclist {}
+  
+  .kclist .ietm {
+    /* background: url('https://cdn.juesedao.cn/qinjiang/17a3a79ee32549789e40ffdd4a9b3d49') no-repeat; */
+    /* height: 316rpx; */
+    width: 100%;
+    /* margin: 0 auto; */
+    /* background-size: cover; */
+    /* position: relative; */
+    /* margin-top: 30rpx;
+     */
+  }
+  
+  .nr {
+    display: flex;
+    border-radius: 12px;
+    border: 0.5px solid #D9E9FF;
+    background: linear-gradient(180deg, #EEF5FF 0%, #FFF 40%);
+    padding: 24rpx;
+  }
+  
+  .nr .left {
+    position: relative;
+  }
+  
+  .nr .sxsj {
+    position: absolute;
+    right: 10rpx;
+    bottom: 18rpx;
+    color: #FFF;
+    font-size: 20rpx;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+  }
+  
+  .nr .left {
+    position: relative;
+  }
+  
+  .nr .sxsj {
+    position: absolute;
+    right: 10rpx;
+    bottom: 18rpx;
+    color: #FFF;
+    font-size: 20rpx;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+  }
+  
+  .nr .left image {
+    width: 240rpx;
+    height: 224rpx;
+    border-radius: 12rpx;
+  }
+  
+  .nr .rigth {
+    margin-left: 24rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nr .rigth .titie {
+    color: #1D2541;
+    font-size: 32rpx;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  
+  .kclist .ietm .nr .rigth .t-blue {
+    color: #1678FF;
+    white-space: nowrap;
+  }
+  
+  .kclist .ietm .nr .rigth .t-grey {
+    color: #bdbdbd;
+    margin: 0 12rpx;
+    white-space: nowrap;
+  }
+  
+  .kclist .ietm .nr .rigth .t-black {
+    color: #222;
+    word-break: break-all;
+    white-space: normal;
+    flex: 1 1 0%;
+    min-width: 0;
+    display: block;
+  }
+  
+  .kclist .ietm .nr .rigth .js {
+    border-radius: 5px;
+    color: #4E536E;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .kclist .ietm .nr .rigth .ls {
+    color: #696969;
+    font-size: 22rpx;
+    font-style: normal;
+    line-height: normal;
+  }
+  
+  .kclist .ietm .nr .rigth .jr {
+    border-radius: 11.27px;
+    background: #E8F2FF;
+    color: #1678FF;
+    text-align: center;
+    font-family: "PingFang SC";
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 100%;
+    padding: 12rpx 24rpx;
+    /* width: 72px; */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .kclist1 .ietm {
+    /* background: url('https://cdn.juesedao.cn/qinjiang/ab48ea3de0b244ce9ee0dc3e89dcdff0') no-repeat; */
+    height: 350rpx;
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    /* margin-top: 30rpx; */
+  }
+  
+  .kclist1 .ietm .nr {
+    /* width: 96%; */
+    display: flex;
+    margin: 0 auto;
+    margin-top: 12rpx;
+  
+  }
+  
+  .kclist1 .ietm .nr .left image {
+    width: 240rpx;
+    height: 180rpx;
+    border-radius: 12rpx;
+  }
+  
+  .nr .money {
+    display: flex;
+    align-items: flex-end;
+    font-size: 40rpx;
+    color: #FD334F;
+    line-height: 1.1;
+  }
+  
+  .kclist1 .ietm .nr .rigth {
+    margin-left: 18rpx;
+  }
+  
+  .kclist1 .ietm .nr .rigth .titie {
+    color: #1D2541;
+    font-size: 32rpx;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  .kclist1 .ietm .nr .rigth .js {
+    border-radius: 5px;
+    color: #6E9226;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10rpx;
+    max-width: 230rpx;
+    background: rgba(255, 255, 255, 0.65);
+    margin: 16rpx 0;
+  }
+  
+  .kclist1 .ietm .nr .rigth .ls {
+    color: #696969;
+    font-size: 22rpx;
+    font-style: normal;
+    line-height: normal;
+    margin: 10rpx 0;
+  }
+  
+  .kclist1 .ietm .nr .rigth .jr {
+    border-radius: 9px 17.637px 17.637px 0px;
+    background: #FFDFB7;
+    width: 90rpx;
+    color: #863F16;
+    text-align: center;
+    font-family: "PingFang SC";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    height: 30rpx;
+    line-height: 30rpx;
+    margin-top: 10rpx;
+  }
+  
+  .kclist1 .topxs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16rpx;
+  }
+  
+  .kclist1 .topxs .le {
+    margin-left: 26rpx;
+  }
+  
+  .kclist1 .topxs .le .rz {
+    color: #444084;
+    font-family: "PingFang SC";
+    font-size: 28rpx;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+  
+  .kclist1 .topxs .le .rz11 {
+    color: #76749B;
+    font-size: 20rpx;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+  }
+  
+  .kclist1 .topxs .ri {
+    text-align: right;
+    margin-right: 26rpx;
+  }
+  
+  .kclist1 .topxs .ri .rz {
+    color: #D91212;
+    font-size: 30rpx;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  .kclist1 .topxs .ri .rz11 {
+    color: #727272;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .czxxk .left:nth-child(2n) .ztdxs {
+    position: absolute;
+    right: -20rpx;
+    top: 23rpx;
+    transform: rotate(45deg);
+    border-radius: 14rpx;
+    border-left: 0 solid transparent;
+    /* 左边边框透明 */
+    border-right: 0 solid #fff;
+    /* 右边边框为背景颜色 */
+    border-bottom: 0 solid transparent;
+    /* 下边边框透明 */
+  }
+  
+  .ztdxs {
+    position: absolute;
+    right: -20rpx;
+    top: 23rpx;
+    transform: rotate(45deg);
+    border-radius: 14rpx;
+    border-left: 70rpx solid transparent;
+    /* 左边边框透明 */
+    border-right: 70rpx solid #fff;
+    /* 右边边框为背景颜色 */
+    border-bottom: 70rpx solid transparent;
+    /* 下边边框透明 */
+  
+  }
+  
+  .czxxk .titile {
+    color: #121212;
+    font-size: 30rpx;
+    font-weight: 800;
+    line-height: 20px;
+    /* 133.333% */
+    position: absolute;
+    top: 30rpx;
+    left: 100rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200rpx;
+    margin-left: 10rpx;
+  
+  }
+  
+  .czxxk:nth-of-typ(even) .titile {
+    margin-left: 10rpx;
+  }
+  
+  .czxxk .nrxs {
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 80rpx;
+    left: 20rpx;
+    z-index: 22;
+  }
+  
+  .czxxk .nrxs .top {
+    border-radius: 26rpx 26rpx 0px 0px;
+    background: #3C78FD;
+    padding: 20rpx;
+  
+  }
+  
+  .czxxk .nrxs .bottom {
+    background: #4B96FC;
+    padding: 20rpx;
+    border-radius: 0 0 26rpx 26rpx;
+  
+  
+  }
+  
+  .czxxk .nrxs .top .name {
+    color: #FFF;
+    font-family: "PingFang SC";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 133.333% */
+  }
+  
+  .czxxk .nrxs .bottom .js {
+    color: #FFF;
+    font-family: "PingFang SC";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 133.333% */
+  }
+  
+  .czxxk .nrxs .bottom .ckjc {
+    color: #000;
+    font-family: "PingFang SC";
+    font-size: 20rpx;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30rpx;
+    /* 133.333% */
+    background-color: #fff;
+    width: 110rpx;
+    height: 30rpx;
+    padding: 4rpx 10rpx;
+    border-radius: 25rpx;
+    text-align: center;
+    margin-top: 50rpx;
+  }
+  
+  .kclist1 .topxs .ri .js {
+    color: #D99512;
+    text-align: center;
+    font-size: 30rpx;
+    font-style: normal;
+    font-weight: 800;
+  }
+  
+  .sc1 image {
+    width: 50rpx;
+    height: 50rpx;
+    position: absolute;
+    left: 10rpx;
+    top: 100rpx;
+  }
+  
+  .kdcsss {
+    height: 200rpx;
+    width: 100%;
+    background-color: #ffff;
+  }
+  
+  .glsr {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 333;
+  
+  }
+  
+  .kjst22 {
+    background: url('https://cdn.juesedao.cn/mdy/2fa38b61b09f4bb9843984293179f8bb') no-repeat;
+  
+  
+    height: 830rpx;
+    width: 80%;
+    margin: 0 auto;
+    background-size: cover;
+    margin-top: 280rpx;
+    position: relative;
+  }
+  
+  .srkxs {
+    position: absolute;
+    left: 40rpx;
+    top: 620rpx;
+    border-radius: 10px;
+    background: #EDEDED;
+    width: 500rpx;
+    padding: 30rpx 20rpx;
+  }
+  
+  .srkxs input {
+    width: 500rpx;
+  
+  }
+  
+  .ljkq {
+    position: absolute;
+  
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%, -50%)
+  }
+  
+  .ljkq image {
+    width: 366rpx;
+  
+  }
+  
+  .ljkq1 {
+    position: absolute;
+  
+    right: -6%;
+    top: -3%;
+    transform: translate(-50%, -50%)
+  }
+  
+  .ljkq1 image {
+    width: 80rpx;
+  
+  }
+  
+  .ksxds {
+    width: 100%;
+    height: 10rpx;
+  }
+  
+  /*使屏幕变暗  */
+  .commodity_screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.2;
+    overflow: hidden;
+    z-index: 1000;
+    color: #fff;
+    z-index: 2222;
+  }
+  
+  /*对话框 */
+  .commodity_attr_box {
+    height: 664rpx;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    background: #fff;
+    padding-top: 20rpx;
+    border-radius: 40rpx 40rpx 0 0;
+    z-index: 2222;
+  
+  }
+  
+  .commodity_attr_box .ts,
+  .modal-content .ts {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40rpx;
+    margin-top: -20rpx;
+  }
+  
+  .commodity_attr_box .content,
+  .modal-content .content {
+    padding: 0 60rpx;
+    color: #a2a2a2;
+    margin-top: 10rpx;
+    font-size: 26rpx;
+  }
+  
+  .commodity_attr_box .ty,
+  .modal-content .ty {
+    background-color: #2173fd;
+    color: #ffffff;
+    border-radius: 50rpx;
+    width: 80%;
+    font-weight: 500;
+    margin-top: 40rpx;
+  }
+  
+  .commodity_attr_box .bty,
+  .modal-content .bty {
+    background-color: transparent;
+    margin-top: 20rpx;
+  }
+  
+  .custom-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32rpx 0px 0 0px;
+    /* background: #fff; */
+    height: 60px;
+  }
+  
+  .custom-tab {
+    flex: 1;
+    text-align: center;
+    font-size: 32rpx;
+    color: #888;
+    padding: 32rpx 0 24rpx 0;
+    font-weight: 500;
+    border-bottom: 4rpx solid transparent;
+    transition: color 0.2s, border 0.2s;
+  }
+  
+  .custom-tab.active {
+    color: #2BA6DB;
+    font-weight: 700;
+  }
+  
+  .tab-content {
+    background: #fff;
+    padding: 32rpx;
+  }
+  
+  .titie-row {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .t-left {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-right: 12rpx;
+  }
+  
+  .t-black {
+    color: #222;
+    font-size: 32rpx;
+    font-weight: 800;
+    word-break: break-all;
+    flex: 1;
+  }

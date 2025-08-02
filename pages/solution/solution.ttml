@@ -31,8 +31,7 @@
             <view wx:if="{{currentTab === 0}}">
                 <view class="corporation">
                     <view class="scheme_banner" wx:for="{{Solution}}" wx:key="id" wx:if="{{index < 4}}">
-                        <image style="border-radius: 24rpx;" bindtap="getdetailed" src="{{item.photo}}"
-                            data-item="{{item}}"></image>
+                        <image style="border-radius: 24rpx;" src="{{item.photo}}" data-item="{{item}}"></image>
                         <view class="rightitemview">{{item.title}}</view>
                     </view>
                     <view wx:if="{{!Solution || Solution.length === 0}}">暂无数据</view>
@@ -42,8 +41,8 @@
                 <view class="corporation">
                     <view class="scheme_banner" wx:for="{{essayList}}" wx:key="index" data-id="{{item.id}}"
                         wx:if="{{index < 3}}">
-                        <image style="border-radius: 24rpx;" bindtap="getdetailed" wx:if="{{item.photo}}"
-                            src="{{item.photo}}" data-item="{{item}}"></image>
+                        <image style="border-radius: 24rpx;" wx:if="{{item.photo}}" src="{{item.photo}}"
+                            data-item="{{item}}"></image>
                         <view class="rightitemview">{{item.title}}</view>
                     </view>
                     <view wx:if="{{!essayList || essayList.length === 0}}">暂无数据</view>
@@ -54,8 +53,8 @@
                 <view class="corporation">
                     <view class="scheme_banner" wx:for="{{Drygoods}}" wx:key="index" data-id="{{item.id}}"
                         wx:if="{{index < 3}}">
-                        <image style="border-radius: 24rpx;" bindtap="getdetailed" wx:if="{{item.photo}}"
-                            src="{{item.photo}}" data-item="{{item}}"></image>
+                        <image style="border-radius: 24rpx;" wx:if="{{item.photo}}" src="{{item.photo}}"
+                            data-item="{{item}}"></image>
                     </view>
                     <view wx:if="{{!Drygoods || Drygoods.length === 0}}">暂无数据</view>
 

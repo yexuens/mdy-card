@@ -1,0 +1,159 @@
+page {
+    background-color: #f7f7f7;
+}
+
+.custom_header {
+    width: 100vw;
+    /* background: linear-gradient(to right,rgba(255, 240, 209, 1) 8% ,rgba(224, 184, 130, 1) 92%); */
+    padding-left: 70rpx;
+    padding-bottom: 18rpx;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    z-index: 66;
+    left: 260rpx;
+    top: 2rpx;
+    font-size: 18px;
+    font-weight: 400;
+    font-size: 36rpx;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.custom_fh {
+    width: 100vw;
+    /* background: linear-gradient(to right,rgba(255, 240, 209, 1) 8% ,rgba(224, 184, 130, 1) 92%); */
+    padding-left: 70rpx;
+    padding-bottom: 18rpx;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    z-index: 66;
+    top: -6rpx;
+    font-size: 18px;
+    font-weight: 400;
+    font-size: 36rpx;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.radar_list {
+
+    width: 20rpx;
+    height: 20rpx;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-right: 1px solid rgba(255, 255, 255, 1);
+    transform: rotate(-135deg);
+}
+
+.ai-end {
+    align-items: flex-end;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.introduce {
+    overflow-x: hidden;
+    position: relative;
+    height: 504rpx;
+    opacity: 1;
+    background: url('https://cdn.juesedao.cn/huiya/6d64f360e4514fec885742bd68457dc8') no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: -140rpx;
+}
+
+.User_information {
+    padding: 0 40rpx;
+    margin-top: 250rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.introduce .User_information .left image {
+    width: 134rpx;
+    height: 134rpx;
+    border-radius: 50%;
+}
+
+.introduce .User_information .consto {}
+
+.introduce .User_information .consto .name {
+    font-size: 28rpx;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 10rpx;
+}
+
+.introduce .User_information .consto view {
+    font-size: 20rpx;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 30rpx;
+}
+
+.introduce .User_information .rigth view {
+
+    width: 144rpx;
+    height: 44rpx;
+    opacity: 1;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 1);
+    font-size: 24rpx;
+    font-weight: 400;
+    text-align: center;
+    line-height: 44rpx;
+    color: rgba(41, 128, 227, 1);
+}
+
+.user_list {
+    margin-top: -100rpx;
+    padding: 0 20rpx;
+}
+
+.user_list .user_item {
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+    padding: 24rpx;
+    margin-top: 40rpx;
+}
+
+.user_list .user_item .top {
+    display: flex;
+}
+
+.user_list .user_item .top .banner image {
+    width: 352rpx;
+    height: 148rpx;
+}
+
+.user_list .user_item .top .nr {
+    font-size: 24rpx;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 20rpx;
+}
+
+.user_list .user_item .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_list .user_item .bottom view {
+    font-size: 24rpx;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+.user_list .user_item .bottom text {
+    font-size: 24rpx;
+    font-weight: 500;
+    color: rgba(23, 119, 255, 1);
+}

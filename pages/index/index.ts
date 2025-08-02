@@ -43,6 +43,20 @@ Page({
 			companyProfile: record
 		})
 	},
+	async getPhoneNumberHandler(e) {
+		console.log(e);
+
+	},
+	tryLogin() {
+		tt.login({
+			success: (res) => {
+				console.log(res);
+			},
+			fail: (res) => {
+
+			},
+		});
+	},
 	openUserAddress() {
 		tt.openLocation({
 			latitude: parseFloat(this.data.companyProfile?.positionLatitude),
@@ -56,7 +70,7 @@ Page({
 			phoneNumber: this.data.user?.phone,
 		});
 	},
-	copyWechatAccount(){
+	copyWechatAccount() {
 		tt.setClipboardData({
 			data: this.data.user.wxcode,
 		});

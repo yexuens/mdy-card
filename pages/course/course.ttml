@@ -1,4 +1,165 @@
 <custom-tab-bar />
+<view class="kjst">
+  <view class="common-functions" style="margin-top: {{300}}rpx;">
+    <view class="cf-title">常用功能</view>
+    <view class="cf-list">
+      <view class="cf-item" bindtap="gocp" data-type="0">
+        <image class="cf-icon" src="https://cdn.juesedao.cn/mdy/5a187b5b1f314d62a9daa4435a559c46" mode="aspectFit">
+        </image>
+        <view class="cf-text">我的课程</view>
+      </view>
+      <view class="cf-item" bindtap="gocp" data-type="1">
+        <image class="cf-icon" src="https://cdn.juesedao.cn/mdy/9f0fefe4a78f48038c99d9e6847bc64e" mode="aspectFit">
+        </image>
+        <view class="cf-text">收藏课程</view>
+      </view>
+      <view class="cf-item">
+        <button open-type="contact">
+          <image class="cf-icon" src="https://cdn.juesedao.cn/mdy/25b7621ecca44dd697dff04097aae482" mode="aspectFit">
+          </image>
+          <view class="cf-text">联系客服</view>
+        </button>
+      </view>
+      <view class="cf-item" bindtap="gocp" data-type="3">
+        <image class="cf-icon" src="https://cdn.juesedao.cn/mdy/475aaf07e47f4cc886b3bae5adce8a0a" mode="aspectFit">
+        </image>
+        <view class="cf-text">关注公众号</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="custom-tabs" style="background-image: url({{customTabBgImages[currentTab]}}); background-size: cover;">
+  <view class="custom-tab {{currentTab==0?'active':''}}" data-index="0" bindtap="onCustomTabTap"></view>
+  <view class="custom-tab {{currentTab==1?'active':''}}" data-index="1" bindtap="onCustomTabTap"></view>
+  <view class="custom-tab {{currentTab==2?'active':''}}" data-index="2" bindtap="onCustomTabTap"></view>
+</view>
+<view class="tab-content">
+  <block tt:if="{{currentTab==0}}">
+    <!-- 获客门道内容 -->
+    <view class="czmd">
+      <view class="czxxk">
+        <view class="cz-card" tt:for="{{czCardList}}" tt:key="index" style="background-image: url({{item.bg}});">
+          <view class="cz-btn" bindtap="gokjxs" data-index="{{index}}">查看教程</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block tt:elif="{{currentTab==1}}">
+    <!-- 公开课程内容 -->
+    <view class="kclist">
+      <view class="ietm" tt:for="{{KGKCLIST}}" bindtap="gogkkc" data-id="{{item.id}}" data-type="2">
+        <view>
+          <view class="nr">
+            <view class="left">
+              <image src="{{item.photo}}" mode="" />
+              <view class="sxsj">{{item.fileLength}}</view>
+            </view>
+            <view class="rigth">
+              <view style="display: flex; flex-direction: column;">
+                <view style="display: flex; flex-direction: column;">
+                  <!-- 第一行：蓝色"认知课"和竖线 -->
+                  <view style="display: flex; align-items: center;">
+                    <view class="t-black" style="margin-top: 4px;">
+                      <view class="t-blue" style="display: inline-block;">认知课</view>
+                      <view class="t-grey" style="margin: 0 5px; display: inline-block;">|</view>
+                      {{item.title}}
+                    </view>
+                  </view>
+                  <!-- 第二行：标题文字（自动换行） -->
+                </view>
+                <view class="js" style="margin-top: 16rpx;">{{item.subTitle}}</view>
+              </view>
 
-<!-- d:\Dy\mdy-card\mdy-card\pages\course\course.ttml -->
-<text>d:\Dy\mdy-card\mdy-card\pages\course\course.ttml</text>
+
+              <view style="display: flex; align-items: center; justify-content: space-between;">
+                <view class="ls">{{item.view}}人已加入</view>
+                <view class="jr">立即加入</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block tt:elif="{{currentTab==2}}">
+    <!-- 付费精选内容 -->
+    <view class="kclist">
+      <view class="ietm" tt:for="{{FFKCLIST}}" bindtap="gogkkc" data-id="{{item.id}}" data-type="3">
+        <view class="nr">
+          <view class="left">
+            <image src="{{item.photo}}" mode="" />
+            <view class="sxsj">{{item.fileLength}}</view>
+          </view>
+          <view class="rigth">
+            <view style="display: flex; flex-direction: column;">
+              <view style="display: flex; flex-direction: column;">
+                <!-- 第一行：蓝色"认知课"和竖线 -->
+                <view style="display: flex; align-items: center;">
+                  <view class="t-black" style="margin-top: 4px;">
+                    <view class="t-blue" style="display: inline-block;">认知课</view>
+                    <view class="t-grey" style="margin: 0 5px; display: inline-block;">|</view>
+                    {{item.title}}
+                  </view>
+                </view>
+                <!-- 第二行：标题文字（自动换行） -->
+              </view>
+              <view class="js" style="margin-top: 16rpx;">{{item.subTitle}}</view>
+            </view>
+
+            <view style="display: flex; align-items: flex-end; justify-content: space-between;">
+              <view style="display: flex; align-items: flex-end;">
+                <view class="money">
+                  <view style="font-size: 12px;">¥</view>{{item.money}}
+                </view>
+                <view class="ls" style="margin-left: 16rpx;">{{item.view}}人已学习</view>
+              </view>
+              <view class="jr" style="background: #FFEBEE; color: #FD334F;" catch:tap="PostLikeArticle"
+                data-item="{{item}}">立刻购买</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="padding">
+  <view class="cxgd" bindtap="gomdjc">
+    <view class="ti">查看更多</view>
+    <view class="icon">
+      <image src="https://cdn.juesedao.cn/mdy/c1be976772d74fc780a39bf90fcbc51f"></image>
+    </view>
+  </view>
+</view>
+<view class="ksxds" style="height: 88rpx;"></view>
+<view class="glsr" tt:if="{{srkl}}">
+  <view class="kjst22">
+    <view class="srkxs">
+      <input bindinput="consigneeNameInput" placeholder="请输入" value="{{KL}}" type="text" />
+    </view>
+    <view class="ljkq">
+      <image src="https://cdn.juesedao.cn/mdy/0c8148fde019459091a2380ad710b2c9" mode="widthFix" bindtap="xrkl">
+      </image>
+    </view>
+    <view class="ljkq1">
+      <image src="https://cdn.juesedao.cn/mdy/e4092278b73b4d7d96e6e9a8f9dc4603" mode="widthFix" bindtap="xrkl1">
+      </image>
+    </view>
+  </view>
+</view>
+<view class="xstc" tt:if="{{login }}">
+  <!-- 弹出框 -->
+  <view animation="{{animationData}}" class="commodity_attr_box">
+    <view class="ts" style="margin-top: 20rpx;">用户协议及隐私政策</view>
+    <scroll-view scroll-y="true" style="height: 300rpx;">
+      <view class="content">
+        您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本
+        <text bindtap="Privacy" style="color: #1822a0;">《用户协议及隐私政策》</text>
+        向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本
+        <text style="color: #1822a0;" bindtap="Privacy">《用户协议及隐私政策》</text>
+        ，希望您仔细阅读，充分理解协议中的内容后再点击同意。
+      </view>
+    </scroll-view>
+    <button class="ty" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">同意并继续</button>
+    <button class="bty" bindtap='NogetUserInfo'>不同意</button>
+  </view>
+</view>

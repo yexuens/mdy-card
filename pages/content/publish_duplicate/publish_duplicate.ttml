@@ -1,0 +1,37 @@
+<view style="padding: 0 40rpx;">
+    <view class="tltie">
+        <view class="left">标题：</view>
+        <view class="rigth"><input value="{{tltie}}" bindinput="inputTltie" placeholder="点击输入文章标题" type="text" /></view>
+    </view>
+
+</view>
+<view style="padding: 0 40rpx;">
+    <view class="tltie">
+        <view class="left">链接：</view>
+        <view class="rigth"><input bindinput="inputTnterlinkage" value="{{Tnterlinkage}}" placeholder="点击输入文章内容链接"
+                type="text" /></view>
+    </view>
+
+    <view class="ba">封面： <view class="shanctup-li-p2">长按删除图片,点击放大图片</view>
+    </view>
+
+
+    <view class="banner">
+        <block>
+            <view class="rigth_Radius">
+                <image bindtap="methods" src="https://cdn.juesedao.cn/mdy/6eb63f0416ba406fa5d908feb8113b57"
+                    style="width: 99rpx; height: 86rpx;     margin-top: 40rpx;     margin-left: 34rpx;"></image>
+            </view>
+            <view class="rigth" wx:for="{{erwm}}" wx:key="index">
+                <image mode="aspectFit" catchlongtap="shanc" bindtap='previewImage' src="{{item}}"
+                    style="width:100%; height: 100%;">
+                </image>
+            </view>
+        </block>
+
+    </view>
+    <view style="display: flex;">
+        <view class="preserve" bindtap="Preview">预览</view>
+        <view class="preserve" bindtap="ModifyData">保存并上传</view>
+    </view>
+</view>

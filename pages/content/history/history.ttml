@@ -1,0 +1,58 @@
+<view style="padding: 0 20rpx;">
+    <view class="history_top">
+
+        <view class="search">
+            <image src="https://cdn.juesedao.cn/mdy/052fa25371cd438f8f38a44e8d24785a"></image>
+            <view class="assist"></view>
+            <input placeholder-class="weui-input" type="text" placeholder="搜索关键词" />
+        </view>
+        <view class="delete" bindtap="DeleteBata">
+            <image src="https://cdn.juesedao.cn/mdy/4ef2ae04f6e940e899e6406ce80dcb2d"></image>
+
+            <view>删除</view>
+        </view>
+    </view>
+    <scroll-view scroll-y="true" style="height: 100%;position: fixed;top: 36px;">
+        <view class="history_list" wx:for="{{MyArticleList}}" wx:key="index">
+            <view class="history_item">
+                <!-- <view class="sky">今天</view> -->
+                <view class="banner" bindtap="EditEssay" data-item="{{item}}">
+                    <image class="banner_i" mode="aspectFit" src="{{item.photo}}"></image>
+
+                    <view class="quantity">
+                        <image src="https://cdn.juesedao.cn/mdy/477a8b86cb18469e8fb744729ba5d600"></image>
+                        <view>{{item.view}}</view>
+                    </view>
+                    <view wx:if="{{show}}" class="{{item.Select ?'quantity_rigth1' :'quantity_rigth'}}"
+                        catchtap="Select_Cancel" data-item="{{item}}">
+                    </view>
+                </view>
+                <view class="title">
+                    <view class="left">{{item.title}}</view>
+                    <view class="rigth">{{item.updateTime}}</view>
+                </view>
+                <!-- <view class="content">
+            分享时机，在不同的时机分析用户是否有分享的意愿，提供给他们合适的分享内容，能让分享的效果更好。
+            下面我们会从不同维度来分析一下APP...s</view> -->
+                <view class="like">
+                    <view class="left" catchtap="PostLikeArticle" data-item="{{item}}">
+                        <image src="https://cdn.juesedao.cn/mdy/316cf7bc8aea46efb9c61c0e646d7af0" bindtap='Revise'
+                            style="width: 26rpx; height: 22rpx;">
+                        </image>
+                        <view style="margin-left: 20rpx;">{{item.great}}</view>
+                    </view>
+                    <view class="rigth">
+                        <button data-item="{{item}}" open-type="share" style="padding: 0rpx;"
+                            class="retransmission">转发分享</button>
+                        <view class="look_over" bindtap="Lookver" data-id="{{item.id}}">查看阅读情况</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view wx:if="MyArticleList == []"
+            style="height: 70vh;display: flex;align-items: center;justify-content: center;">
+            暂无文章
+        </view>
+    </scroll-view>
+
+</view>

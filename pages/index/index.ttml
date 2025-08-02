@@ -5,7 +5,7 @@
     <view class="user-top-section">
         <image class="user-top-bg" src="https://cdn.juesedao.cn/mdy/056582d689924018969e8039602b3282"
             mode="scaleToFill"></image>
-        <view class="user-top-content">
+        <view bindtap="tryLogin" class="user-top-content">
             <view class="avatar-box">
                 <image class="avatar" mode="aspectFill" src="{{user.photo}}"></image>
             </view>
@@ -26,10 +26,10 @@
             <view class="dz">ADD.{{user.address}}</view>
         </view>
         <view class="user_bottom">
-            <view class="item1" bindtap="copyWechatAccount" data-name="加微">
+            <!-- <view class="item1" bindtap="copyWechatAccount" data-name="加微">
                 <image mode="widthFix" src="https://cdn.juesedao.cn/mdy/7a6bc5d0cf9b46769bd42cbf333af532"></image>
                 <view class="btn-label">加微</view>
-            </view>
+            </view> -->
             <view class="item2" bindtap="openPhoneCall" data-name="电话">
                 <image mode="widthFix" src="https://cdn.juesedao.cn/mdy/5ec252c8626e400caaa7f0a71a1027bc"></image>
                 <view class="btn-label">电话</view>
@@ -130,8 +130,7 @@
         </view>
     </view>
 
-    <view bindtap="navigateToWeb" data-url="{{item.linkUrl}}" class="item" tt:for="{{articleList}}" tt:key="index"
-        data-id="{{item.id}}">
+    <view data-url="{{item.linkUrl}}" class="item" tt:for="{{articleList}}" tt:key="index" data-id="{{item.id}}">
         <image style="width: 100%; border-radius: 30rpx;" mode="widthFix" tt:if="{{item.photo}}" src="{{item.photo}}"
             data-item="{{item}}" />
         <view class="name">{{item.title}}</view>
@@ -153,8 +152,10 @@
         style="width: 90%; height: 2px; background-color: aliceblue;margin-top: 15rpx;margin-bottom: 15rpx;margin-left: 3px;">
     </view>
     <block wx:if="{{StorageSync}}">
-        <button class="fx_banner1" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
-            <view bindtap="businessCard" style="margin-top: 10rpx;">我的名片</view>
+        <button class="fx_banner1" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumberHandler">
+            <!-- <view bindtap="businessCard" style="margin-top: 10rpx;">我的名片</view> -->
+            <view style="margin-top: 10rpx;">我的名片</view>
+
             <image style=" margin-left: 16rpx ;width: 40rpx; height: 30rpx; margin-top: 7px;"
                 src="https://cdn.juesedao.cn/huiya/7bb66480cf4d4714b1b17e99ca19e955"></image>
         </button>

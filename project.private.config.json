@@ -9,11 +9,32 @@
                 {
                     "id": 1752549100570,
                     "name": "pages/prod/prod",
-                    "pathName": "pages/prod/prod",
+                    "pathName": "pages/moments/moments",
+                    "query": "",
+                    "scene": "011001",
+                    "launchFrom": "search_used_list",
+                    "location": "",
+                    "mockUpdateType": "Noupdate",
+                    "addType": "manual"
+                },
+                {
+                    "id": 1752627429636,
+                    "name": "pages/course/course",
+                    "pathName": "pages/course/course",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",
                     "location": "qr_code",
+                    "mockUpdateType": "Noupdate"
+                },
+                {
+                    "id": 1752644703058,
+                    "name": "pages/",
+                    "pathName": "pages/content/detail/detail",
+                    "query": "id=110",
+                    "scene": "011001",
+                    "launchFrom": "search_used_list",
+                    "location": "",
                     "mockUpdateType": "Noupdate"
                 }
             ]

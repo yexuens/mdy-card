@@ -1,0 +1,694 @@
+page {
+    background-color: #fff;
+  }
+  
+  .kjst {
+    /* background: url('https://cdn.juesedao.cn/mdy/adb03633e40b4ed2ab04c86885e47bc2') no-repeat; */
+  
+  
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .bfal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 222;
+  }
+  
+  .bfal image {
+    width: 102rpx;
+    height: 102rpx;
+  
+  }
+  
+  .custom-header {
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: center;
+    /* 水平两端对齐，但这里会被下面的代码覆盖 */
+    padding-top: 80rpx;
+    /* 其他样式... */
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-size: 32rpx;
+    font-weight: 600;
+    line-height: 51.223px;
+    /* 320.146% */
+  }
+  
+  .wlqt_item {
+    white-space: nowrap;
+    margin-top: 18rpx;
+  }
+  
+  .wlqt_item .tq_item {
+    display: inline-block;
+    text-align: center;
+    width: 190rpx;
+    color: #969696;
+    text-align: center;
+    font-size: 30rpx;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .xz {
+    border-radius: 29.287px;
+    background: #292929;
+    padding: 20rpx 30rpx;
+    color: #fff !important;
+    font-weight: 800;
+  }
+  
+  .flxx {
+    margin-left: 30rpx;
+  }
+  
+  .kclist .ietm {
+    background: url('https://cdn.juesedao.cn/qinjiang/17a3a79ee32549789e40ffdd4a9b3d49') no-repeat;
+  
+  
+    height: 310rpx;
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    margin-top: 30rpx;
+  }
+  
+  .kclist .ietm .nr {
+    width: 96%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 100rpx;
+    left: 20rpx;
+  }
+  
+  .kclist .ietm .nr .left image {
+    width: 240rpx;
+    height: 180rpx;
+    border-radius: 12rpx;
+  }
+  
+  .kclist .ietm .nr .rigth {
+    margin-left: 18rpx;
+  }
+  
+  .kclist .ietm .nr .rigth .titie {
+    color: #1D2541;
+    text-align: center;
+    font-size: 32rpx;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  .kclist .ietm .nr .rigth .js {
+    border-radius: 5px;
+    color: #6E9226;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10rpx;
+    max-width: 230rpx;
+    background: rgba(255, 255, 255, 0.65);
+    margin: 16rpx 0;
+  }
+  
+  .kclist .ietm .nr .rigth .ls {
+    color: #696969;
+    font-size: 22rpx;
+    font-style: normal;
+    line-height: normal;
+  }
+  
+  .kclist .ietm .nr .rigth .jr {
+    border-radius: 11.27px;
+    background: #FFF;
+    color: #1D2541;
+    text-align: center;
+    font-family: "PingFang SC";
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 54rpx;
+    height: 54rpx;
+    margin-left: 280rpx;
+    padding: 0rpx 20rpx;
+  }
+  
+  .padding {
+    padding: 20rpx 30rpx 50rpx 30rpx;
+    background-color: #fff;
+  }
+  
+  .myVideo {
+    height: 500rpx;
+  }
+  
+  .kjst .top {
+    position: relative;
+  }
+  
+  .kjst .top .sc {
+    position: absolute;
+    right: 40rpx;
+    bottom: 40rpx;
+    color: #fff;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+  }
+  
+  .titie {
+    color: #02092F;
+    font-size: 32rpx;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.4; /* 改为1.4实现140%行高效果 */
+    
+    /* 多行文本支持 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 限制最多显示2行 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .avatar-stack {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 24rpx;
+    align-items: center;
+    position: relative;
+    height: 120rpx;
+    border-bottom: 0.5px solid var(--Gray-Gray3, #E7E7E7);
+  }
+  
+  .avatar {
+    position: absolute;
+    width: 64rpx;
+    /* 或者你想要的尺寸 */
+    height: 64rpx;
+    /* 或者你想要的尺寸 */
+    border-radius: 50%;
+    /* 圆形头像 */
+    border: 2px solid #fff;
+    /* 可选，为了清晰看到头像边缘 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 可选，增加一些阴影效果 */
+  }
+  
+  .avatar:nth-child(1) {
+    /* 第一个头像在最上面，不需要调整 */
+    top: 0;
+    left: 0;
+    z-index: 4;
+    /* 最高层 */
+  }
+  
+  .avatar:nth-child(2) {
+    /* 第二个头像稍微向下和向右偏移，覆盖第一个头像的一部分 */
+    top: 0px;
+    left: 30px;
+    z-index: 3;
+    /* 中间层 */
+  }
+  
+  .avatar:nth-child(3) {
+    /* 第三个头像再稍微向下和向右偏移，覆盖第二个头像的一部分 */
+    top: 0px;
+    left: 50px;
+    z-index: 2;
+    /* 最底层 */
+  }
+  
+  .avatar:nth-child(4) {
+    /* 第三个头像再稍微向下和向右偏移，覆盖第二个头像的一部分 */
+    top: 0px;
+    left: 80px;
+    z-index: 1;
+    /* 最底层 */
+  }
+  
+  .avatar-stack .scsl {
+    position: absolute;
+    color: var(--text-icon-font-gy-260, rgba(0, 0, 0, 0.60));
+    top: 20rpx;
+    left: 240rpx;
+    /* Body/Small */
+    font-size: 24rpx;
+    font-style: normal;
+    margin-left: 16rpx;
+    font-weight: 400;
+    line-height: 20px;
+    /* 166.667% */
+  }
+  
+  .mrxs {
+    margin-top: 40rpx;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mrxs .rigth {
+    display: inline-flex;
+    height: 28px;
+    padding: 3px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    color: var(--Brand-Brand7-Normal, #0052D9);
+    text-align: center;
+    font-family: "PingFang SC";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+    text-transform: uppercase;
+    border-radius: 6px;
+    background: var(--Brand-Brand1-Light, #F2F3FF);
+  }
+  
+  .mrxs .left .item {
+    display: flex;
+    align-items: center;
+    margin-top: 10rpx;
+  }
+  
+  .mrxs .left .item .icon image {
+    width: 40rpx;
+    height: 40rpx;
+  }
+  
+  .mrxs .left .item .nar {
+    color: #9A9DAC;
+  
+    /* Body/Medium */
+    font-size: 28rpx;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 20rpx;
+    margin-top: -6rpx;
+  }
+  
+  .kcjs {
+    margin-top: 80rpx;
+    color: #02092F;
+  
+    /* Body/Medium */
+    font-family: "PingFang SC";
+    font-size: 32rpx;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    /* 157.143% */
+  }
+  
+  .xxjs {
+    color: #4E536E;
+    font-family: "PingFang SC";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 32rpx;
+    line-height: 22px;
+    /* 169.231% */
+    padding-bottom: 32rpx;
+    /* border-bottom: 0.5px solid var(--Gray-Gray3, #E7E7E7); */
+  }
+  
+  .dbdhl {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: var(--Gray-White, #FFF);
+    height: 200rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .dbdhl .rigth {
+    color: var(--text-icon-font-wh-1100, #FFF);
+    text-align: center;
+    font-family: "PingFang SC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90rpx;
+    /* 150% */
+    border-radius: 6px;
+    background: #000;
+    height: 90rpx;
+    width: 60%;
+  }
+  
+  .dbdhl .left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dbdhl .left .sc {
+    background-color: transparent;
+    width: 200rpx !important;
+    padding: 0 !important;
+    font-weight: 500 !important;
+    font-size: 24rpx !important;
+  }
+  
+  .dbdhl .left .fx {
+    background-color: transparent;
+    width: 200rpx !important;
+    padding: 0 !important;
+    font-weight: 500 !important;
+    font-size: 24rpx !important;
+  
+  }
+  
+  .dbdhl .left .fx image {
+    width: 44rpx;
+    height: 44rpx;
+  }
+  
+  .dbdhl .left .sc image {
+    width: 44rpx;
+    height: 44rpx;
+  }
+  
+  .sc1 image {
+    width: 70rpx;
+    height: 70rpx;
+    position: absolute;
+    left: 10rpx;
+    top: 100rpx;
+  }
+  
+  /*使屏幕变暗  */
+  .commodity_screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.2;
+    overflow: hidden;
+    z-index: 1000;
+    color: #fff;
+    z-index: 2222;
+  }
+  
+  /*对话框 */
+  .commodity_attr_box {
+    height: 664rpx;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    background: #fff;
+    padding-top: 20rpx;
+    border-radius: 40rpx 40rpx 0 0;
+    z-index: 2222;
+  
+  }
+  
+  .commodity_attr_box .ts,
+  .modal-content .ts {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40rpx;
+    margin-top: -20rpx;
+  }
+  
+  .commodity_attr_box .content,
+  .modal-content .content {
+    padding: 0 60rpx;
+    color: #a2a2a2;
+    margin-top: 10rpx;
+    font-size: 26rpx;
+  }
+  
+  .commodity_attr_box .ty,
+  .modal-content .ty {
+    background-color: #2173fd;
+    color: #ffffff;
+    border-radius: 50rpx;
+    width: 80%;
+    font-weight: 500;
+    margin-top: 40rpx;
+  }
+  
+  .commodity_attr_box .bty,
+  .modal-content .bty {
+    background-color: transparent;
+    margin-top: 20rpx;
+  }
+  
+  .modal-content {
+    position: fixed;
+    top: 450rpx;
+    left: 35rpx;
+    z-index: 9500;
+    width: 680rpx;
+    height: 630rpx;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 20rpx;
+  }
+  
+  
+  .wrong {
+    width: 440rpx;
+    height: 440rpx;
+    margin: 0 auto;
+    margin-top: 298rpx;
+    background: url('https://cdn.juesedao.cn/huiya/7784fd07478b4eeba77b68c371e09938') no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 230rpx;
+  }
+  
+  .bp {
+    font-size: 40rpx;
+    font-weight: 700;
+    color: rgba(48, 44, 72, 1);
+  }
+  
+  .sq {
+    width: 226rpx;
+    height: 88rpx;
+    margin: 0 auto;
+    margin-top: 86rpx;
+  
+    opacity: 1;
+    line-height: 88rpx;
+    border-radius: 100px;
+    background: rgba(87, 154, 255, 1);
+    font-size: 30rpx;
+    font-weight: 600;
+  
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 13px 25px 0px rgba(86, 123, 194, 0.16);
+  }
+  
+  .mp {
+    margin-top: 8rpx;
+    font-size: 30rpx;
+    font-weight: 500;
+    color: rgba(48, 44, 72, 1);
+  }
+  
+  .seek {
+    position: fixed;
+    right: 10px;
+    z-index: 999;
+    top: 700rpx;
+    width: 108rpx;
+    height: 108rpx;
+    opacity: 0.8;
+    border-radius: 24rpx;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .zx_banner {
+    background-color: transparent;
+    display: grid;
+    font-size: 10px;
+    padding: 0;
+  
+  
+  }
+  
+  .seek view {
+    font-size: 20rpx;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 0px;
+    color: #1822a0;
+    margin-top: 8px;
+    text-align: left;
+    height: 30rpx;
+    margin-left: 18rpx;
+  }
+  
+  .sustain_mdy_my {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 0px;
+    color: rgba(166, 166, 166, 1);
+    text-align: center;
+    margin-top: 30rpx;
+    padding-bottom: 300rpx;
+  
+  }
+  
+  .sustain_mdy {
+    position: fixed;
+    bottom: 46rpx;
+    left: 244rpx;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 0px;
+    color: rgba(166, 166, 166, 1);
+    text-align: center;
+  }
+  
+  .show {
+    display: block;
+    color: #000;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .xstc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.78) 100%), #FFF;
+  }
+  
+  .zkc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2222;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.78) 100%), #FFF;
+  }
+  
+  .sp {
+    padding: 32rpx;
+  }
+  
+  .kjst1 {
+    background: url('https://cdn.juesedao.cn/mdy/2fa38b61b09f4bb9843984293179f8bb') no-repeat;
+    height: 830rpx;
+    width: 80%;
+    margin: 0 auto;
+    background-size: cover;
+    margin-top: 276rpx;
+    position: relative;
+  }
+  
+  .srkxs {
+    position: absolute;
+    left: 40rpx;
+    top: 620rpx;
+    border-radius: 10px;
+    background: #EDEDED;
+    width: 500rpx;
+    padding: 30rpx 20rpx;
+  }
+  
+  .srkxs input {
+    width: 500rpx;
+  
+  }
+  
+  .ljkq {
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%, -50%)
+  }
+  
+  .ljkq image {
+    width: 366rpx;
+  }
+  
+  .ljkq1 {
+    position: absolute;
+    right: -6%;
+    top: -3%;
+    transform: translate(-50%, -50%)
+  }
+  
+  .ljkq1 image {
+    width: 80rpx;
+  
+  }
+  
+  .kcjsxs {
+    margin-top: 44rpx;
+    color: #040000;
+    font-size: 32rpx;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+  }
+  
+  .isxsfk image {
+    margin-top: 28rpx;
+    width: 100%;
+  }
+  
+  .isxsfk {
+    padding-bottom: 160rpx;
+  }
+  
+  .bottom-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .priceName {
+    border-radius: 30rpx;
+    background: #FDE0BA;
+    padding: 10rpx 16rpx;
+    color: #956A50;
+    font-size: 24rpx;
+    line-height: 140%;
+    flex-shrink: 0; /* 防止价格标签被压缩 */
+    margin-top: 4rpx; /* 微调垂直对齐 */
+  }

@@ -1,0 +1,90 @@
+.search {
+    height: 64rpx;
+    opacity: 1;
+    border-radius: 18px;
+    background: rgba(244, 246, 251, 1);
+    display: flex;
+    align-items: center;
+    font-size: 28rpx;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 0px;
+    color: rgba(128, 128, 128, 1);
+    position: fixed;
+    width: 90%;
+    top: 0;
+
+}
+
+.search .assist {
+    width: 30rpx;
+}
+
+.search image {
+    width: 28rpx;
+    height: 28rpx;
+    margin-left: 42rpx;
+}
+
+.increased_introduce {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.increased_introduce .left .name {
+    font-size: 28rpx;
+    font-weight: 500;
+
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 16rpx;
+}
+
+.increased_introduce .left view {
+    font-size: 24rpx;
+    font-weight: 400;
+    margin-bottom: 16rpx;
+    color: rgba(0, 0, 0, 1);
+}
+
+.increased_introduce .rigth {
+    margin-top: 56rpx;
+}
+
+.increased_contact {
+    align-items: center;
+    display: flex;
+    height: 100rpx;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 1);
+}
+
+.padding_bottom:last-child {
+    padding-bottom: 150rpx;
+}
+
+.increased_contact .contact {
+    width: 144rpx;
+    height: 44rpx;
+    opacity: 1;
+    border-radius: 50px;
+    background: #1822a0;
+    font-size: 24rpx;
+    font-weight: 400;
+    line-height: 44rpx;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.increased_contact .action {
+    width: 144rpx;
+    height: 44rpx;
+    opacity: 1;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 44rpx;
+    text-align: center;
+    color: rgba(56, 56, 56, 1);
+    border: 1px solid #1822a0;
+    margin-left: 36rpx;
+}

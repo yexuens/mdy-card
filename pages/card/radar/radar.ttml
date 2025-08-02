@@ -1,0 +1,70 @@
+<view class="visit">
+    <view style="padding: 20rpx 40rpx;">
+        <view style="font-size: 32rpx;font-weight: 400;color: rgba(255, 255, 255, 1);">访问人数</view>
+        <view class="times">
+            <view class="left text-ellipsis">{{detailed.renshu_sum ? detailed.renshu_sum:0}}</view>
+            <view class="rigth" bindtap="getlist">
+                <!-- <view>
+            <image src="/images/shouye/lianjie.png"></image>
+            <image src="/images/shouye/lianjie.png"></image>
+            <image src="/images/shouye/lianjie.png"></image>
+          </view> -->
+                <view class="fx"></view>
+            </view>
+        </view>
+        <view class="new_user">
+            <view class="left">昨日访问人数：{{detailed.renshu_yesterday ? detailed.renshu_yesterday :0}}</view>
+            <view class="rigth">新增人数：{{detailed.renshu_today ?detailed.renshu_today :0}}</view>
+        </view>
+    </view>
+</view>
+
+<view class="visit" style="margin-top: 20rpx;">
+    <view style="padding: 20rpx 40rpx;">
+        <view style="font-size: 32rpx;font-weight: 400;color: rgba(255, 255, 255, 1);">新用户数</view>
+        <view class="times">
+            <view class="left text-ellipsis">{{detailed.yonghu_sum ?detailed.yonghu_sum :0}}</view>
+            <view class="rigth" bindtap="getUserList">
+                <!-- <view>
+            <image src="/images/shouye/lianjie.png"></image>
+            <image src="/images/shouye/lianjie.png"></image>
+            <image src="/images/shouye/lianjie.png"></image>
+          </view> -->
+                <view class="fx"></view>
+            </view>
+        </view>
+        <view class="new_user">
+            <view class="left">昨日新增用户数：{{detailed.yonghu_yesterday ? detailed.yonghu_yesterday :0}}</view>
+            <view class="rigth">新增用户：{{detailed.yonghu_today ?detailed.yonghu_today:0}}</view>
+        </view>
+    </view>
+</view>
+
+
+<view class="increased">
+    <view class="increased_title">
+        <view class="left">
+            <image src="https://cdn.juesedao.cn/mdy/731c4a0dd4514499a79095390f4a15d5"
+                style="width: 30rpx; height: 30rpx;"></image>
+            <view class="xz">新增访问客户</view>
+        </view>
+        <view class="rigth" bindtap="getlist">MORE></view>
+    </view>
+
+</view>
+<view class="increased" tt:for="{{VisitList}}" tt:key="index">
+    <view class="increased_introduce">
+        <view class="left">
+            <view class="name">{{item.wxName}}</view>
+            <view>{{item.phone}}</view>
+            <view>最后访问时间:{{item.latestTime}} <text style="margin-left: 12rpx;">访问次数:{{item.count}}</text></view>
+        </view>
+        <view class="rigth">
+            <image src="{{item.wxPhoto}}" style="width: 112rpx; height: 112rpx; border-radius: 50%;"></image>
+        </view>
+    </view>
+    <view class="increased_contact">
+        <view class="contact" bindtap="Contact" data-item="{{item.phone}}">立刻联系</view>
+        <view class="action" bindtap="FootMark" data-id="{{item.id}}">行为足迹</view>
+    </view>
+</view>

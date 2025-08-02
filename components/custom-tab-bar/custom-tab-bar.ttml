@@ -1,0 +1,8 @@
+<view id="countDown" class="tab-bar" wx:if="{{tebshow}}">
+    <view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}"
+        bindtap="switchTab">
+        <image src="{{selected === index ? item.selectedIconPath : item.iconPath}}" />
+        <view style="color: {{selected === index ? '#000000' : '#5c5c5c'}}; margin-top: 10rpx;">{{item.text}}
+        </view>
+    </view>
+</view>

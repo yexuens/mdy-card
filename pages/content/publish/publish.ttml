@@ -1,0 +1,26 @@
+<view class="found" bindtap="getuserXj">
+
+    <view class="left">
+        <view class="name">新建内容</view>
+        <view class="const">撰写新的干货，包括标题、内容、照片等</view>
+    </view>
+    <view class="rigth">
+        <image src="https://cdn.juesedao.cn/mdy/8f96df1d65c846c9b8f120d582562b88" style="width: 48rpx; height: 48rpx;">
+        </image>
+    </view>
+</view>
+
+<view class="found" bindtap="getuserFz">
+
+    <view class="left">
+        <view class="name">复制内容</view>
+        <view class="const">复制已有干货链接，快速发布干货内容</view>
+    </view>
+    <view class="rigth">
+        <image src="https://cdn.juesedao.cn/mdy/6cf5eae4ad7e475aa84cf4c4ed3c6727" style="width: 48rpx; height: 48rpx;">
+        </image>
+    </view>
+</view>
+
+
+<view class="banner"></view>

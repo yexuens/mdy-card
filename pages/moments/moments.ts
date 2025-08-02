@@ -1,5 +1,6 @@
 import { GET } from "../../api/GET"
 import { httpGet } from "../../utils/request"
+import { getDataSet } from "../../utils"
 
 Page({
 
@@ -11,6 +12,12 @@ Page({
     phone: '',
     address: '',
     banner: '',
+    form: {
+      name: '',
+      phone: '',
+      address: '',
+      sex: ''
+    },
     bricklayerColumnDataList: [
       {
         coverPic: 'https://cdn.juesedao.cn/mdy/e6012591e8d0446fba8ef7e9f9e5f5f0',
@@ -46,12 +53,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+  },
+  handleInput(e) {
+    const { label } = getDataSet(e)
     this.setData({
-      navBarHeight: app.globalData.navBarHeight,
-      menuRight: app.globalData.menuRight,
-      menuTop: app.globalData.menuTop,
-      menuHeight: app.globalData.menuHeight,
+      [`form.${label}`]: e.detail.value
     })
+
   },
   getFriendsCircle() {
     httpGet(GET.get_friends_circle).then(res3 => {
@@ -235,9 +243,9 @@ Page({
 
       })
     }
-    this.getSubscribe()
-    this.getRecommend();
-    this.getFriendsCircle();
+    // this.getSubscribe()
+    // this.getRecommend();
+    // this.getFriendsCircle();
   },
 
   /**
@@ -281,5 +289,58 @@ Page({
       path: 'pages/make/index'
 
     }
+  },
+  validateForm(form: any) {
+    if (!form?.name) {
+      tt.showToast({
+        title: '请输入姓名',
+        icon: 'fail'
+      })
+      return false
+    }
+    if (!form?.phone) {
+      tt.showToast({
+        title: '请输入手机号',
+        icon: 'fail'
+      })
+      return false
+    }
+    if (!form?.address) {
+      tt.showToast({
+        title: '请输入地址',
+        icon: 'fail'
+      })
+      return false
+    }
+    return true
+  },
+  handleSubmit() {
+    const { form } = this.data
+    if (!this.validateForm(form))
+      return
+    console.log(form);
+
+    httpGet(GET.contact_us, {
+      ...form,
+      flag: 'save'
+    }).then(resp => {
+      const { code } = resp
+      if (code == '1') {
+        tt.showToast({
+          title: '提交成功',
+          icon: 'success'
+        })
+        this.setData({
+          form: {} as any
+        })
+      }
+      else
+        tt.showToast({
+          title: '提交失败',
+          icon: 'fail'
+        })
+    })
+
+
   }
 })

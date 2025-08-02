@@ -1,0 +1,34 @@
+<view class="introduce">
+    <view class="User_information">
+        <view class="left">
+            <image src="{{Userinfo.wxPhoto}}"></image>
+        </view>
+        <view class="consto">
+            <view class="name">{{Userinfo.wxName}}</view>
+            <view>{{Userinfo.phone}}</view>
+            <view>最后访问时间：{{Userinfo.latestTime}}</view>
+            <view>访问次数: {{Userinfo.count}}</view>
+        </view>
+        <view class="rigth" bindtap="Contact">
+            <view>立刻联系</view>
+        </view>
+    </view>
+
+</view>
+<view class="user_list">
+    <view class="user_item" wx:key="index" wx:for="{{UserList}}" bindtap="getShare" data-item="{{item}}">
+        <view class="top">
+            <view class="banner">
+                <image src="{{item.photo}}"></image>
+            </view>
+            <view class="nr">{{item.title}}</view>
+        </view>
+        <view class="bottom">
+            <view class="left">浏览：<text>{{item.createTime}}</text></view>
+            <view class="rigth">
+                停留： <text>{{item.timeSpent}}</text>s
+            </view>
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,28 @@
+<view style="padding: 0 20rpx;">
+    <view class="search">
+      <image src="/images/shouye/ss1.png"></image>
+      <view class="assist"></view>
+      <input bindconfirm='bindconfirm' bindblur='bindconfirm' placeholder-class="weui-input" type="text" placeholder="搜索关键词" />
+    </view>
+    <scroll-view wx:if="{{UserList && UserList.length > 0}}"  scroll-y="true" style="height: 100%;position: fixed;top: 36px;">
+      <view class="padding_bottom" style="width: 90%;" wx:for="{{UserList}}" wx:key="index">
+        <view class="increased_introduce">
+          <view class="left">
+            <view class="name">{{item.wxName}}</view>
+            <view>{{item.phone}}</view>
+            <view>首次访问时间:{{item.createTime}} <text style="margin-left: 12rpx;">访问次数:{{item.count}}</text></view>
+          </view>
+          <view class="rigth">
+            <image src="{{item.wxPhoto}}" style="width: 112rpx; height: 112rpx; border-radius: 50%;"></image>
+          </view>
+        </view>
+        <view class="increased_contact">
+          <view class="contact" bindtap="Contact" data-item="{{item.phone}}">立刻联系</view>
+      <view class="action" bindtap="FootMark" data-id="{{item.id}}">行为足迹</view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="null" wx:if="{{UserList && UserList.length == 0}}">
+    <image style="width:70%;" src="https://cdn.juesedao.cn/sed/4f5a73e078074e87ac1da7ea10fdec66" mode="widthFix"></image>
+  </view>
+  </view>

@@ -1,0 +1,223 @@
+.search {
+    height: 64rpx;
+    border-radius: 40rpx;
+    background: rgba(244, 246, 251, 1);
+    display: flex;
+    align-items: center;
+}
+
+.search .assist {
+    width: 50rpx;
+}
+
+.search image {
+    width: 28rpx;
+    height: 28rpx;
+    margin-left: 50rpx;
+}
+
+.delete image {
+    width: 28rpx;
+    height: 28rpx;
+    margin-left: 20rpx;
+    margin-top: 3rpx;
+}
+
+.search .weui-input {
+    font-size: 24rpx;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 1);
+}
+
+.history_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 90%;
+}
+
+.delete {
+    opacity: 1;
+    border-radius: 50px;
+    background: #2173fd;
+    width: 140rpx;
+    height: 64rpx;
+    font-size: 28rpx;
+    line-height: 64rpx;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+}
+
+.delete view {
+    margin-left: 10rpx;
+}
+
+.history_list {
+    margin-top: 42rpx;
+    width: 90%;
+}
+
+.history_item .sky {
+    font-size: 28rpx;
+    font-weight: 400;
+
+    color: rgba(128, 128, 128, 1);
+    margin-top: 12rpx;
+
+}
+
+.history_item .banner {
+    margin-top: 12rpx;
+    position: relative;
+
+}
+
+.history_item .banner .banner_i {
+    height: 296rpx;
+    width: 696rpx;
+    margin: 0 auto;
+
+}
+
+.history_item .banner .quantity {
+    width: 120rpx;
+    height: 34rpx;
+    opacity: 0.3;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    position: absolute;
+    top: 0;
+
+}
+
+.history_item .banner .quantity_rigth {
+
+    width: 20rpx;
+    height: 20rpx;
+    border-radius: 50%;
+    border: 2px solid #716F6F;
+    background-color: #716F6F;
+    position: absolute;
+    top: 8rpx;
+    right: 0;
+}
+
+.quantity_rigth1 {
+    width: 20rpx;
+    height: 20rpx;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 8rpx;
+    right: 0;
+    border: 2px solid #6599e8;
+    background-color: #6599e8;
+}
+
+.history_item .banner .quantity image {
+    width: 28rpx;
+    height: 18rpx;
+    margin: 8rpx 8rpx 8rpx;
+}
+
+.history_item .banner .quantity_rigth image {
+    width: 28rpx;
+    height: 18rpx;
+    margin: 8rpx 8rpx 8rpx;
+}
+
+.history_item .banner .quantity view {
+    font-size: 20rpx;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    line-height: 34rpx;
+}
+
+.history_item .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12rpx;
+}
+
+.history_item .title .left {
+    font-size: 28rpx;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 450rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    color: rgba(0, 0, 0, 1);
+}
+
+.history_item .title .rigth {
+    font-size: 20rpx;
+    font-weight: 500;
+
+    color: rgba(128, 128, 128, 1);
+}
+
+.history_item .content {
+    margin-top: 12rpx;
+    font-size: 22rpx;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: rgba(128, 128, 128, 1);
+}
+
+.history_item .like {
+    margin-top: 24rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100rpx;
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
+
+}
+
+.history_item .like .left {
+    display: flex;
+    align-items: center;
+    font-size: 20rpx;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+}
+
+.history_item .like .rigth {
+    display: flex;
+    align-items: center;
+}
+
+.history_item .like .rigth .retransmission {
+    width: 184rpx;
+    height: 42rpx;
+    opacity: 1;
+    background: rgba(211, 220, 242, 1);
+    font-size: 20rpx;
+    font-weight: 500;
+    line-height: 42rpx;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    border-radius: 100rpx 0px 0px 100rpx;
+}
+
+.history_item .like .rigth .look_over {
+    width: 184rpx;
+    height: 42rpx;
+    opacity: 1;
+    border-radius: 0px 100rpx 100rpx 0px;
+    background: rgba(78, 138, 222, 1);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 42rpx;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}

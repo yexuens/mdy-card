@@ -1,0 +1,108 @@
+.tltie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rpx;
+  }
+  
+  .tltie .left,
+  .concot .left,
+  .banner .left {
+    font-size: 28rpx;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+  }
+  .ba {
+    font-size: 28rpx;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 20rpx;
+    margin-left: 4rpx;
+    display: flex;
+    align-items: center;
+  }
+  .tltie .rigth input {
+    width: 500rpx;
+    height: 58rpx;
+    opacity: 1;
+    background: rgba(244, 246, 251, 1);
+    font-size: 24rpx;
+    font-weight: 500;
+  
+    color: rgba(128, 128, 128, 1);
+    border: 0.3px solid rgba(166, 166, 166, 1);
+    padding-left: 20rpx;
+  }
+  .shanctup-li-p2 {
+    color: #595757;
+    font-weight: 300;
+    font-size: 24rpx;
+  }
+  
+  .concot {
+    display: flex;
+    justify-content: center;
+    margin-top: 20rpx;
+  }
+  
+  .concot .rigth textarea {
+    width: 500rpx;
+    height: 620rpx;
+    opacity: 1;
+    background: rgba(244, 246, 251, 1);
+    font-size: 24rpx;
+    font-weight: 500;
+  
+    color: rgba(128, 128, 128, 1);
+    border: 0.3px solid rgba(166, 166, 166, 1);
+    padding-left: 20rpx;
+    padding-top: 6rpx;
+  }
+  
+  .dotted {
+    margin-top: 44rpx;
+    height: 0px;
+    opacity: 1;
+    border: 1px dotted rgba(166, 166, 166, 1);
+  
+  }
+  
+  .banner {
+    margin-top: 44rpx;
+    margin-left: 126rpx;
+  }
+  
+  .banner .rigth_fd {
+    width: 500rpx;
+    height: 300rpx;
+    opacity: 1;
+    background: rgba(196, 196, 196, 1);
+    margin: 20rpx 20rpx;
+  }
+  .banner .rigth {
+    width: 160rpx;
+    height: 160rpx;
+    opacity: 1;
+    background: rgba(196, 196, 196, 1);
+    margin: 20rpx 20rpx;
+    border-radius: 25rpx;
+  }
+  .dj  {
+    width: 162rpx;
+    height: 162rpx;
+    opacity: 1;
+    background: rgba(196, 196, 196, 1);
+  }
+  .preserve {
+    width: 296rpx;
+    height: 60rpx;
+    opacity: 1;
+    border-radius: 15px;
+    background: #1822a0;
+    margin: 0 auto;
+    margin-top: 100rpx;
+    line-height: 60rpx;
+    font-size: 32rpx;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+  }

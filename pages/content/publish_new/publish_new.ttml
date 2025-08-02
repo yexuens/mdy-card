@@ -1,0 +1,32 @@
+<view style="padding: 0 40rpx;">
+    <view class="tltie">
+        <view class="left">标题：</view>
+        <view class="rigth"><input bindinput="inputTltie" value="{{tltie}}" placeholder="点击输入文章标题" type="text" /></view>
+    </view>
+    <view class="concot">
+        <view class="left">内容：</view>
+        <view class="rigth">
+            <textarea bindinput="inputConost" value="{{conost}}" class="input" name="remark" placeholder="点击输入文章内容" />
+        </view>
+    </view>
+    <view class="dotted"></view>
+    <view class="ba">配图：<view class="shanctup-li-p2">长按删除图片,点击放大图片</view>
+    </view>
+
+
+    <view class="banner">
+        <block>
+            <view class="rigth">
+                <image bindtap="methods" src="https://cdn.juesedao.cn/mdy/6eb63f0416ba406fa5d908feb8113b57"
+                    style="width: 99rpx; height: 85rpx;     margin-top: 40rpx;     margin-left: 36rpx;"></image>
+            </view>
+            <view class="rigth_fd" wx:for="{{erwm}}" wx:key="index">
+                <image mode="aspectFit" catchlongtap="shanc" bindtap='previewImage' src="{{item}}"
+                    style="width:100%; height: 100%;">
+                </image>
+            </view>
+        </block>
+
+    </view>
+    <view class="preserve" bindtap="ModifyData">保存并上传</view>
+</view>

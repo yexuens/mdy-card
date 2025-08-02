@@ -1,0 +1,38 @@
+page {
+    background-color: #f4f6fb;
+}
+
+.found {
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+    margin: 24rpx 0;
+    padding: 34rpx 32rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.found .left .name {
+    font-size: 36rpx;
+    font-weight: 400;
+
+    color: rgba(56, 56, 56, 1);
+}
+
+.found .left .const {
+    margin-top: 12rpx;
+    font-size: 26rpx;
+    font-weight: 400;
+
+    color: rgba(112, 112, 112, 1);
+}
+
+.banner {
+    width: 602rpx;
+    height: 414rpx;
+    margin: 0 auto;
+    margin-top: 298rpx;
+    background: url('https://cdn.juesedao.cn/huiya/3d887be47d0642d0933f37331bf3e2f1') no-repeat;
+    background-position: center;
+    background-size: cover;
+}

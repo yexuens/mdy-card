@@ -99,6 +99,12 @@ Page({
       }
     })
   },
+  Picture(e) {
+    const item = e.currentTarget.dataset.item;
+    tt.navigateTo({
+      url: '/pages/product/picture/picture?banner=' + item.image + '&id=' + item.id,
+    })
+  },
   // 获取各个section的位置信息
   getSectionPositions() {
     const query = tt.createSelectorQuery();

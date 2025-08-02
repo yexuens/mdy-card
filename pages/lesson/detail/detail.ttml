@@ -1,0 +1,120 @@
+<view class="kjst">
+    <view class="top">
+      <view class="sp" wx:if="{{kcxq.fileType==1}}">
+        <video bindfullscreenchange='bindfullscreenchange ' show-fullscreen-btn="{{false}}" show-center-play-btn="{{false}}" autoplay="{{false}}" poster="{{kcxq.photo}}" id="myVideo" bindplay="onPlay" bindpause="onPause" class="myVideo" src="{{kcxq.fileUrl}}" style="width: 100%;"></video>
+      </view>
+      <view class="sp" wx:if="{{kcxq.fileType!=1}}">
+        <image mode="widthFix" style="width: 100%;border-radius: 30rpx;" src="{{kcxq.photo}}" bindtap="dkcpxx"></image>
+      </view>
+      <!-- <view class="sc"  wx:if="{{kcxq.fileType==1 && xsxs}}">{{kcxq.fileLength}}</view> -->
+      <!-- <view class="sc1" bindtap="goxzss">
+        <image src="https://cdn.juesedao.cn/mdy/d255fe18dca74f8b86233ff02cf526c0"></image>
+      </view> -->
+    </view>
+    <view class="padding">
+      <view class="bottom">
+        <view class="bottom-title">
+          <view class="titie">
+            <view class="priceName" style="display: inline-block;">{{priceName}}</view>
+            {{kcxq.title}}
+          </view>
+        </view>
+        <!-- <view class="avatar-stack">  
+      <image src="https://cdn.juesedao.cn/mdy/f52f6dd0a53f466ab657f077ad4f171e" class="avatar"></image>
+      <image src="https://cdn.juesedao.cn/mdy/f52f6dd0a53f466ab657f077ad4f171e" class="avatar"></image>
+      <image src="https://cdn.juesedao.cn/mdy/f52f6dd0a53f466ab657f077ad4f171e" class="avatar"></image>
+      <image src="https://cdn.juesedao.cn/mdy/f52f6dd0a53f466ab657f077ad4f171e" class="avatar"></image>
+  
+  <view class="scsl">236人收藏</view>
+  </view> -->
+        <view class="mrxs">
+          <view class="left">
+            <view class="item">
+              <view class="icon">
+                <image src="https://cdn.juesedao.cn/mdy/412568b1875845d5888ff551d67074e6"></image>
+              </view>
+              <view class="nar">发布时间: {{kcxq.createTime}}</view>
+            </view>
+            <view class="item">
+              <view class="icon">
+                <image src="https://cdn.juesedao.cn/mdy/dc6b21b151f7483eb7bc2e9639850842"></image>
+              </view>
+              <view class="nar">课程讲师: {{kcxq.lecturer}}</view>
+            </view>
+          </view>
+          <!-- <view class="rigth">
+            {{kcxq.fileTypeName}}
+          </view> -->
+        </view>
+        <view class="kcjs">课程介绍</view>
+        <view class="xxjs">
+          <view class="xxjs-item" wx:for="{{kcxq.detailList}}" wx:key="index">
+            <text class="number">{{index + 1}}.</text>
+            <text class="content">{{item}}</text>
+          </view>
+        </view>
+        <view class="kcjsxs" wx:if="{{kcxq.unlock ==0}}">课程内容</view>
+        <view class="isxsfk" wx:if="{{kcxq.unlock ==0}}" bindtap="PostLikeArticle">
+          <image src="https://cdn.juesedao.cn/mdy/70eee30733ef4fbd80664a6761a2bab5" mode="widthFix"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="dbdhl">
+    <view class="left">
+      <button class="sc">
+        <view class="inco">
+          <image bindtap="xzsc" src="{{kcxq.collect ? 'https://cdn.juesedao.cn/mdy/3e4194fb41c14093adbeec4d621fbc00':'https://cdn.juesedao.cn/mdy/62256a7a7ac14bb0a803d3c65e99590b'}}"></image>
+        </view>
+        <view class="name">收藏</view>
+      </button>
+      <button class="fx" wx:if="{{!login && !sffx }}" bindtap="fxsb">
+        <view class="inco">
+          <image src="https://cdn.juesedao.cn/mdy/dd1c5f0424bc4a44af7cbc225e9adb35"></image>
+        </view>
+        <view class="name">分享</view>
+      </button>
+      <button class="fx" open-type="share" wx:if="{{!login && sffx }}">
+        <view class="inco">
+          <image src="https://cdn.juesedao.cn/mdy/dd1c5f0424bc4a44af7cbc225e9adb35"></image>
+        </view>
+        <view class="name">分享</view>
+      </button>
+    </view>
+    <view class="rigth" bindtap="PostLikeArticle" wx:if="{{kcxq.unlock ==0}}">
+      立即购买 ¥{{kcxq.money}}
+    </view>
+    <view class="rigth" bindtap="BFAN" wx:if="{{!kcxq.unlock  ||kcxq.unlock ==1 }}">立即查看</view>
+  </view>
+  <view class="xstc" wx:if="{{login }}">
+    <!-- 弹出框 -->
+    <view animation="{{animationData}}" class="commodity_attr_box">
+      <view class="ts" style="margin-top: 20rpx;">用户协议及隐私政策</view>
+      <scroll-view scroll-y="true" style="height: 300rpx;">
+        <view class="content">
+          您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本
+          <text bindtap="Privacy" style="color: #1822a0;">《用户协议及隐私政策》</text>
+          向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本
+          <text style="color: #1822a0;" bindtap="Privacy">《用户协议及隐私政策》</text>
+          ，希望您仔细阅读，充分理解协议中的内容后再点击同意。
+        </view>
+      </scroll-view>
+      <button class="ty" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">同意并继续</button>
+      <button class="bty" bindtap='NogetUserInfo'>不同意</button>
+    </view>
+  </view>
+  <view class="zkc" wx:if="{{sfczkl && kccs.type ==1}}">
+    <view class="kjst1">
+      <view class="srkxs">
+        <input bindinput="consigneeNameInput" placeholder="请输入" value="{{KL}}" type="text" />
+      </view>
+      <view class="ljkq">
+        <image src="https://cdn.juesedao.cn/mdy/0c8148fde019459091a2380ad710b2c9" mode="widthFix" bindtap="xrkl"></image>
+      </view>
+      <!-- <view class="ljkq1">
+        <image src="https://cdn.juesedao.cn/mdy/e4092278b73b4d7d96e6e9a8f9dc4603" mode="widthFix" bindtap="xrkl1"></image>
+      </view> -->
+    </view>
+  </view>
+  <!-- <GRXX bind:changeNaviIndex="onGetPhone"></GRXX> -->
+  <!-- <FHSY bind:changeNaviIndex="onGetPhone"></FHSY> -->
